@@ -1,0 +1,729 @@
+.home-booksandservicesof-vl-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-booksandservicesof-vl-home-booksandservicesof-vl {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 53px 16px 166px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 1);
+}
+.home-booksandservicesof-vl-vector {
+  width: 134px;
+  height: 140px;
+}
+.home-booksandservicesof-vl-content {
+  gap: 56px;
+  display: flex;
+  padding: 0 24px;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-booksandservicesof-vl-heading-container {
+  gap: 16px;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+.home-booksandservicesof-vl-heading-text {
+  gap: 8px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-booksandservicesof-vl-text {
+  color: rgba(249, 168, 4, 1);
+  height: auto;
+  font-size: 18px;
+  align-self: stretch;
+  font-style: Regular;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-text02 {
+  color: rgba(234, 234, 252, 1);
+  height: auto;
+  font-size: 51px;
+  align-self: stretch;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 120.00000476837158%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-text04 {
+  color: rgba(182, 182, 198, 1);
+  height: auto;
+  font-size: 18px;
+  align-self: stretch;
+  font-style: Regular;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-group21 {
+  width: 1066px;
+  height: 105.43391418457031px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.home-booksandservicesof-vl-group9 {
+  top: 8.869564056396484px;
+  left: 0px;
+  width: 190px;
+  height: 12px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.home-booksandservicesof-vl-text06 {
+  color: rgba(249, 168, 4, 1);
+  width: 190px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-group12 {
+  top: 3.6521739959716797px;
+  left: 190px;
+  width: 292px;
+  height: 29.260000228881836px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.home-booksandservicesof-vl-group8 {
+  top: 0px;
+  left: 0px;
+  width: 292px;
+  height: 29.260000228881836px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.home-booksandservicesof-vl-text08 {
+  top: 7.607609272003174px;
+  left: 31.024993896484375px;
+  color: rgba(0, 0, 0, 1);
+  width: 184px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 100;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-group11 {
+  top: 39.13043212890625px;
+  left: 0px;
+  width: 482px;
+  height: 29.260000228881836px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.home-booksandservicesof-vl-text10 {
+  top: 8.127802848815918px;
+  left: -2.842170943040401e-14px;
+  color: rgba(249, 168, 4, 1);
+  width: 190px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-group81 {
+  top: 5.6843418860808015e-14px;
+  left: 190px;
+  width: 292px;
+  height: 29.260000228881836px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.home-booksandservicesof-vl-text12 {
+  top: 7.607609272003174px;
+  left: 31.024993896484375px;
+  color: rgba(0, 0, 0, 1);
+  width: 184px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 100;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-group10 {
+  top: 0px;
+  left: 554px;
+  width: 512px;
+  height: 29.260000228881836px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.home-booksandservicesof-vl-text14 {
+  top: 8.127802848815918px;
+  color: rgba(249, 168, 4, 1);
+  width: 220px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-group82 {
+  top: 0px;
+  left: 220px;
+  width: 292px;
+  height: 29.260000228881836px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.home-booksandservicesof-vl-text16 {
+  top: 7.607609272003174px;
+  left: 31px;
+  color: rgba(0, 0, 0, 1);
+  width: 243px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 100;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-group13 {
+  top: 39.13043212890625px;
+  left: 554px;
+  width: 512px;
+  height: 29.260000228881836px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.home-booksandservicesof-vl-text18 {
+  top: 5.852014541625977px;
+  color: rgba(249, 168, 4, 1);
+  width: 220px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-group83 {
+  top: 0px;
+  left: 220px;
+  width: 292px;
+  height: 29.260000228881836px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.home-booksandservicesof-vl-text20 {
+  top: 7.607609272003174px;
+  left: 31px;
+  color: rgba(0, 0, 0, 1);
+  width: 243px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 100;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-group15 {
+  top: 76.17391204833984px;
+  left: 554px;
+  width: 512px;
+  height: 29.260000228881836px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.home-booksandservicesof-vl-text22 {
+  top: 8.127802848815918px;
+  color: rgba(249, 168, 4, 1);
+  width: 220px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-group84 {
+  top: 0px;
+  left: 220px;
+  width: 292px;
+  height: 29.260000228881836px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.home-booksandservicesof-vl-text24 {
+  top: 7.607609272003174px;
+  left: 31px;
+  color: rgba(0, 0, 0, 1);
+  width: 243px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 100;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-group14 {
+  top: 75.13043212890625px;
+  left: 0px;
+  width: 482.5px;
+  height: 29.2608642578125px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.home-booksandservicesof-vl-text26 {
+  color: rgba(249, 168, 4, 1);
+  width: 150px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-rectangle3 {
+  top: 3.2608642578125px;
+  left: 195.5px;
+  width: 287px;
+  height: 26px;
+  position: absolute;
+  border-color: rgba(249, 168, 4, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20px;
+}
+.home-booksandservicesof-vl-text30 {
+  top: 7.3220319747924805px;
+  left: 279px;
+  color: rgba(0, 0, 0, 1);
+  width: 157px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 100;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-feature-grid {
+  gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.home-booksandservicesof-vl-feature {
+  gap: 16px;
+  width: 373.33331298828125px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.home-booksandservicesof-vl-icon-container {
+  gap: 12px;
+  display: flex;
+  padding: 12px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.home-booksandservicesof-vl-bg {
+  top: -3px;
+  left: -1.666015625px;
+  width: 48px;
+  height: 48px;
+  opacity: 0.50;
+  position: absolute;
+}
+.home-booksandservicesof-vl-frameiconlist {
+  width: 20px;
+  height: 17.5px;
+  display: flex;
+  z-index: 1;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.home-booksandservicesof-vl-vector01 {
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 17px;
+  position: absolute;
+}
+.home-booksandservicesof-vl-text-container {
+  gap: 8px;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+.home-booksandservicesof-vl-text32 {
+  color: rgba(234, 234, 252, 1);
+  height: auto;
+  font-size: 18px;
+  align-self: stretch;
+  font-style: Regular;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-text34 {
+  color: rgba(182, 182, 198, 1);
+  height: auto;
+  font-size: 14px;
+  align-self: stretch;
+  font-style: Regular;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  line-height: 160.0000023841858%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-feature1 {
+  gap: 16px;
+  width: 373.33331298828125px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.home-booksandservicesof-vl-icon-container1 {
+  gap: 12px;
+  display: flex;
+  padding: 12px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.home-booksandservicesof-vl-bg1 {
+  top: -3px;
+  left: -1.666015625px;
+  width: 48px;
+  height: 48px;
+  opacity: 0.50;
+  position: absolute;
+}
+.home-booksandservicesof-vl-frameiconstaroutline {
+  width: 20px;
+  height: 18.99997329711914px;
+  display: flex;
+  z-index: 1;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.home-booksandservicesof-vl-vector02 {
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 19px;
+  position: absolute;
+}
+.home-booksandservicesof-vl-text-container1 {
+  gap: 8px;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+.home-booksandservicesof-vl-text36 {
+  color: rgba(234, 234, 252, 1);
+  height: auto;
+  font-size: 18px;
+  align-self: stretch;
+  font-style: Regular;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-text38 {
+  color: rgba(182, 182, 198, 1);
+  height: auto;
+  font-size: 14px;
+  align-self: stretch;
+  font-style: Regular;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  line-height: 160.0000023841858%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-feature2 {
+  gap: 16px;
+  width: 373.33331298828125px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.home-booksandservicesof-vl-icon-container2 {
+  gap: 12px;
+  display: flex;
+  padding: 12px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.home-booksandservicesof-vl-bg2 {
+  top: -1px;
+  left: -1.666015625px;
+  width: 48px;
+  height: 48px;
+  opacity: 0.50;
+  position: absolute;
+}
+.home-booksandservicesof-vl-frameiconfilenotfound {
+  width: 20px;
+  height: 22.5px;
+  display: flex;
+  z-index: 1;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.home-booksandservicesof-vl-vector03 {
+  top: 6.250001430511475px;
+  left: 9.99997615814209px;
+  width: 0px;
+  height: 5px;
+  position: absolute;
+}
+.home-booksandservicesof-vl-vector04 {
+  top: 16.248626708984375px;
+  left: 9.99997615814209px;
+  width: 0px;
+  height: 1px;
+  position: absolute;
+}
+.home-booksandservicesof-vl-vector05 {
+  top: 0px;
+  left: 0px;
+  width: 6px;
+  height: 4px;
+  position: absolute;
+}
+.home-booksandservicesof-vl-vector06 {
+  top: 9.999998092651367px;
+  left: -5.6843418860808015e-14px;
+  width: 0px;
+  height: 2px;
+  position: absolute;
+}
+.home-booksandservicesof-vl-vector07 {
+  top: 9.999998092651367px;
+  left: 19.999996185302734px;
+  width: 0px;
+  height: 2px;
+  position: absolute;
+}
+.home-booksandservicesof-vl-vector08 {
+  top: 2.842170943040401e-14px;
+  left: 13.749994277954102px;
+  width: 6px;
+  height: 4px;
+  position: absolute;
+}
+.home-booksandservicesof-vl-vector09 {
+  top: 18.750003814697266px;
+  left: -5.6843418860808015e-14px;
+  width: 6px;
+  height: 4px;
+  position: absolute;
+}
+.home-booksandservicesof-vl-vector10 {
+  top: 18.750003814697266px;
+  left: 13.749994277954102px;
+  width: 6px;
+  height: 4px;
+  position: absolute;
+}
+.home-booksandservicesof-vl-text-container2 {
+  gap: 8px;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+.home-booksandservicesof-vl-text40 {
+  color: rgba(234, 234, 252, 1);
+  height: auto;
+  font-size: 18px;
+  align-self: stretch;
+  font-style: Regular;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-text42 {
+  color: rgba(182, 182, 198, 1);
+  height: auto;
+  font-size: 14px;
+  align-self: stretch;
+  font-style: Regular;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  line-height: 160.0000023841858%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.home-booksandservicesof-vl-cta-button {
+  gap: 4px;
+  width: 162px;
+  height: 57px;
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(123, 123, 136, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  justify-content: center;
+}
+.home-booksandservicesof-vl-text-container3 {
+  gap: 8px;
+  display: flex;
+  padding: 0 4px;
+  align-items: center;
+  justify-content: center;
+}
+.home-booksandservicesof-vl-text44 {
+  color: rgba(234, 234, 252, 1);
+  height: auto;
+  font-size: 14px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  line-height: 160.0000023841858%;
+  font-stretch: normal;
+  text-decoration: none;
+}
