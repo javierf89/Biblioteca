@@ -128,6 +128,12 @@
   flex-shrink: 1;
 }
 .home-booksandservicesof-vl-group8 {
+  border: 1px solid white;
+  outline: none; /* Remueve el borde de enfoque predeterminado */
+}
+
+
+.home-booksandservicesof-vl-group8 {
   top: 0px;
   left: 0px;
   width: 292px;
@@ -137,6 +143,8 @@
   align-items: flex-start;
   flex-shrink: 1;
   background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(249,168,4,1);
+  border-radius: 20px;
 }
 .home-booksandservicesof-vl-text08 {
   top: 7.607609272003174px;
@@ -189,7 +197,7 @@
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
-  background-color: rgba(255, 255, 255, 1);
+  
 }
 .home-booksandservicesof-vl-text12 {
   top: 7.607609272003174px;
@@ -241,7 +249,7 @@
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
-  background-color: rgba(255, 255, 255, 1);
+ 
 }
 .home-booksandservicesof-vl-text16 {
   top: 7.607609272003174px;
@@ -293,7 +301,7 @@
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
-  background-color: rgba(255, 255, 255, 1);
+  
 }
 .home-booksandservicesof-vl-text20 {
   top: 7.607609272003174px;
@@ -345,7 +353,7 @@
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
-  background-color: rgba(255, 255, 255, 1);
+  
 }
 .home-booksandservicesof-vl-text24 {
   top: 7.607609272003174px;
@@ -726,4 +734,24 @@
   line-height: 160.0000023841858%;
   font-stretch: normal;
   text-decoration: none;
+}
+
+
+.home-booksandservicesof-vl-rectangle3:focus {
+  border: 1px solid white;
+  outline: none; /* Remueve el borde de enfoque predeterminado */
+}
+
+
+
+.home-booksandservicesof-vl-cta-button:hover{
+  width: 165px;
+  height: 57px; 
+  
+  
+}
+.home-booksandservicesof-vl-cta-button:active{
+  transform: scale(0.95); 
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2); 
+
 }
