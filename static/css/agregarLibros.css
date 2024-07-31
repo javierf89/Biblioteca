@@ -925,17 +925,17 @@ body {
   color: black;
   font-size: 30px;
   cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.1); /* Sombra inicial */
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
 }
 .button:hover {
-  width: 301px; /* Nuevo ancho en el estado hover */
-  height: 53px; /* Nuevo alto en el estado hover */
-  background: rgb(245, 185, 66); /* Nuevo color de fondo en el estado hover */
-  border: 1px solid rgb(247, 190, 77); /* Mantiene el borde en el estado hover */
+  width: 301px; 
+  height: 53px; 
+  background: rgb(245, 185, 66); 
+  border: 1px solid rgb(247, 190, 77); 
 }
 .button:active {
-  transform: scale(0.95); /* Reduce el tamaño para simular hundimiento */
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2); /* Sombra más pequeña para efecto de hundimiento */
+  transform: scale(0.95); 
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2); 
 }
 .v32_306{
   width: 400px;
