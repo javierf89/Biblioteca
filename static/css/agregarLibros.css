@@ -169,11 +169,16 @@ body {
   top: 0px;
   left: 0px;
   border: 1px solid rgba(249,168,4,1);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
   overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Cambia el borde a blanco cuando el input está enfocado */
+.v32_263:focus {
+  border: 1px solid white;
+  outline: none; /* Remueve el borde de enfoque predeterminado */
 }
 .v32_264 {
   width: 184px;
@@ -190,7 +195,6 @@ body {
 .v32_265 {
   width: 292px;
   height: 50px;
-  background: url("../images/v32_265.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -203,7 +207,6 @@ body {
 .v32_267 {
   width: 292px;
   height: 50px;
-  background: url("../images/v32_267.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -899,4 +902,54 @@ body {
   position: absolute;
   top: 15px;
   left: 1127px;
+}
+.button {
+  width: 301px;
+  height: 53px;
+  background: rgba(249,168,4,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 1px solid rgba(249,168,4,1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 
+      width 0.3s, 
+      height 0.3s, 
+      background-color 0.3s,
+      transform 0.1s; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1); /* Sombra inicial */
+}
+.button:hover {
+  width: 301px; /* Nuevo ancho en el estado hover */
+  height: 53px; /* Nuevo alto en el estado hover */
+  background: rgb(245, 185, 66); /* Nuevo color de fondo en el estado hover */
+  border: 1px solid rgb(247, 190, 77); /* Mantiene el borde en el estado hover */
+}
+.button:active {
+  transform: scale(0.95); /* Reduce el tamaño para simular hundimiento */
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2); /* Sombra más pequeña para efecto de hundimiento */
+}
+.v32_306{
+  width: 400px;
+  height: 100px;
+  margin-left: 100px;
+  margin-top: -50px;
+}
+
+.atras{
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.perfil{
+  margin-left:1100px;
+  margin-top: 10px;
 }
