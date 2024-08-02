@@ -252,6 +252,16 @@
   padding: 16px 24px;
   align-items: center;
   flex-shrink: 0;
+  overflow: hidden;
+  transition: 
+      width 0.3s, 
+      height 0.3s, 
+      background-color 0.3s,
+      transform 0.1s; 
+  display: flex;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  color: rgb(0, 0, 0);
   border-radius: 8px;
   justify-content: center;
   background-color: rgba(249, 168, 4, 1);
@@ -282,6 +292,20 @@
   padding: 16px 24px;
   align-items: center;
   flex-shrink: 0;
+  border-color: rgba(234, 234, 252, 1);
+  color: rgba(234, 234, 252, 1);
+  border-style: solid;
+  border-width: 1px;
+  justify-content: center;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 
+      width 0.3s, 
+      height 0.3s, 
+      background-color 0.3s,
+      transform 0.1s; 
+  display: flex;
+  cursor: pointer;
   border-color: rgba(123, 123, 136, 1);
   border-style: solid;
   border-width: 1px;
@@ -969,6 +993,17 @@
   border-width: 1px;
   border-radius: 8px;
   justify-content: center;
+  overflow: hidden;
+  transition: 
+      width 0.3s, 
+      height 0.3s, 
+      background-color 0.3s,
+      transform 0.1s; 
+  display: flex;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  color: rgba(123, 123, 136, 1);
+  background-color: rgb(0, 0, 0) ;
 }
 .virtual-library-text-container08 {
   gap: 8px;
@@ -1478,16 +1513,22 @@
 }
 .virtual-library-input-form {
   gap: 8px;
+  color: rgba(182, 182, 198, 1);
   display: flex;
   padding: 16px;
   align-self: stretch;
   align-items: center;
   flex-shrink: 0;
-  border-color: rgba(84, 84, 94, 1);
+  text-align: left;
+  align-items: center;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  border-color: rgba(234, 234, 252, 1);
   border-style: solid;
   border-width: 1px;
-  border-radius: 8px;
   background-color: rgba(24, 24, 27, 1);
+  border-radius: 8px;
+  ;
 }
 .virtual-library-text-container09 {
   gap: 8px;
@@ -1532,16 +1573,21 @@
 }
 .virtual-library-input-form1 {
   gap: 8px;
+  color: rgba(182, 182, 198, 1);
   display: flex;
   padding: 16px;
   align-self: stretch;
   align-items: center;
   flex-shrink: 0;
-  border-color: rgba(84, 84, 94, 1);
+  text-align: left;
+  align-items: center;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  border-color: rgba(234, 234, 252, 1);
   border-style: solid;
   border-width: 1px;
-  border-radius: 8px;
   background-color: rgba(24, 24, 27, 1);
+  border-radius: 8px;
 }
 .virtual-library-text-container10 {
   gap: 8px;
@@ -1588,13 +1634,18 @@
 }
 .virtual-library-input-form2 {
   gap: 8px;
+  color: rgba(182, 182, 198, 1);
   display: flex;
   padding: 16px;
   flex-grow: 1;
   align-self: stretch;
   align-items: flex-start;
-  border-color: rgba(84, 84, 94, 1);
-  border-style: solid;
+  border-color: rgba(234, 234, 252, 1);
+   border-style: solid;
+   text-align: left;
+  align-items: center;
+  font-family: Source Sans Pro;
+  font-weight: 400;   
   border-width: 1px;
   border-radius: 8px;
   background-color: rgba(24, 24, 27, 1);
@@ -1625,10 +1676,22 @@
   display: flex;
   padding: 16px 24px;
   align-items: center;
+  border-color: rgba(234, 234, 252, 1);
   flex-shrink: 0;
   border-radius: 8px;
   justify-content: center;
+  overflow: hidden;
+  transition: 
+      width 0.3s, 
+      height 0.3s, 
+      background-color 0.3s,
+      transform 0.1s; 
+  display: flex;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  color: rgb(0, 0, 0);
   background-color: rgba(249, 168, 4, 1);
+  
 }
 .virtual-library-text-container12 {
   gap: 8px;
@@ -1785,6 +1848,7 @@
   font-weight: 400;
   border-color: rgba(234, 234, 252, 1);
   border-style: solid;
+  border-radius: 8px;
   border-width: 1px;
   background-color: rgba(24, 24, 27, 1);
 }
@@ -1798,6 +1862,28 @@
   border-style: solid;
   border-width: 1px;
   justify-content: center;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 
+      width 0.3s, 
+      height 0.3s, 
+      background-color 0.3s,
+      transform 0.1s; 
+  display: flex;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  color: rgb(0, 0, 0);
+  background-color: rgb(249,168,4,1);
+  height: auto;
+  font-size: 14px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  line-height: 160.0000023841858%;
+  font-stretch: normal;
+  text-decoration: none;
+  
 }
 .virtual-library-text122 {
   color: rgba(234, 234, 252, 1);
@@ -1919,4 +2005,29 @@
   line-height: 160.0000023841858%;
   font-stretch: normal;
   text-decoration: none;
+}
+
+.button {
+  width: 301px;
+  height: 53px;
+  background: rgba(249,168,4,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 1px solid rgba(249,168,4,1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 
+      width 0.3s, 
+      height 0.3s, 
+      background-color 0.3s,
+      transform 0.1s; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
 }
