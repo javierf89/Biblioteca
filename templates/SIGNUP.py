@@ -35,7 +35,13 @@ def submitSignUp():
     return jsonify({"status": "success"}), 200
 
 
-#@app.route("",methods=["post"])
-#def 
+@app.route('/api/books', methods=['GET'])
+def get_books():
+    books = [
+        {'id': 1, 'title': 'Book 1', 'image_url': 'https://i.pinimg.com/originals/c4/55/b2/c455b28336521304afeb4b352a099e4a.jpg'},
+        {'id': 2, 'title': 'Book 2', 'image_url': 'https://i1.wp.com/geekdad.com/wp-content/uploads/2013/07/hpnc6.jpg?ssl=1'},
+        {'id': 3, 'title': 'Book 3', 'image_url': 'https://images.cdn2.buscalibre.com/fit-in/360x360/e3/bc/e3bcd85377567759874a0664f894a67b.jpg'}
+    ]
+    return jsonify(books)
 if __name__ == "__main__":
     app.run(debug=True)
