@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from Conexion import MyDatabase
+import base64
+from io import BytesIO
 
 app = Flask(__name__)
 CORS(app) 
@@ -35,13 +37,39 @@ def submitSignUp():
     return jsonify({"status": "success"}), 200
 
 
-@app.route('/api/books', methods=['GET'])
-def get_books():
-    books = [
-        {'id': 1, 'title': 'Book 1', 'image_url': 'https://i.pinimg.com/originals/c4/55/b2/c455b28336521304afeb4b352a099e4a.jpg'},
-        {'id': 2, 'title': 'Book 2', 'image_url': 'https://i1.wp.com/geekdad.com/wp-content/uploads/2013/07/hpnc6.jpg?ssl=1'},
-        {'id': 3, 'title': 'Book 3', 'image_url': 'https://images.cdn2.buscalibre.com/fit-in/360x360/e3/bc/e3bcd85377567759874a0664f894a67b.jpg'}
-    ]
-    return jsonify(books)
+@app.route('/libros_disponibles', methods=['GET'])
+def libros_disponibles():
+    conexion = db.open_connection()
+    query = """SELECT titulo, imagen FROM Libros_Disponibles"""
+
+    try:
+        cursor = conexion.cursor()
+        cursor.execute(query)
+        resultados = cursor.fetchall()
+        cursor.close()
+        conexion.close() 
+
+        # Convertir imagen binaria a base64
+        libros = []
+        for fila in resultados:
+            titulo = fila[0]
+            imagen_binaria = fila[1]
+
+            if imagen_binaria:
+                imagen_base64 = base64.b64encode(imagen_binaria).decode('utf-8')
+            else:
+                imagen_base64 = None
+
+            libros.append({
+                "titulo": titulo,
+                "imagen": imagen_base64
+            })
+
+        return jsonify(libros), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
