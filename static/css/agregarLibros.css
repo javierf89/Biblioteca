@@ -4,6 +4,7 @@
 body {
   font-size: 14px;
 }
+
 .v31_230 {
   width: 100%;
   height: 802px;
@@ -173,6 +174,7 @@ body {
   overflow: hidden;
   padding: 10px;
   box-sizing: border-box;
+  z-index: 10;
 }
 
 /* Cambia el borde a blanco cuando el input está enfocado */
@@ -568,6 +570,7 @@ body {
   opacity: 1;
   text-align: left;
 }
+
 .v32_326 {
   width: 537px;
   height: 181px;
@@ -578,6 +581,19 @@ body {
   opacity: 1;
   position: absolute;
   top: 272px;
+  left: 557px;
+  overflow: hidden;
+}
+.v32_386 {
+  width: 537px;
+  height: 181px;
+  background: url("../images/v32_326.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 342px;
   left: 557px;
   overflow: hidden;
 }
@@ -636,7 +652,6 @@ body {
 .v32_331 {
   width: 521px;
   height: 50px;
-  background: url("../images/v32_331.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -952,4 +967,11 @@ body {
 .perfil{
   margin-left:1100px;
   margin-top: 10px;
+}
+
+
+#container{
+  margin-top: 1000px;
+  margin-left: 557px;
+
 }

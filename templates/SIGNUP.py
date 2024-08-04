@@ -69,6 +69,64 @@ def libros_disponibles():
     except Exception as e:
         return jsonify({"error": str(e)}), 400
 
+@app.route("/agregar_libros", methods=["POST"])
+def agregar_libros():
+    data = request.json
+    titulo = data.get('titulo')
+    fechaPublicacion = data.get('fechaPublicacion')
+    idioma = data.get('idioma')
+    isbn = data.get('isbn')
+    numEdicion = data.get('numEdicion')
+    numPaginas = data.get('numPaginas')
+    url = data.get('url')
+    editorial_id = data.get('editorial')
+    imagen_base64 = data.get('imageData')
+    proveedor = data.get('proveedor')
+    precio = data.get('precio')
+    if imagen_base64:
+        imagen_binario = base64.b64decode(imagen_base64)
+    conexion = db.open_connection()
+    cursor = conexion.cursor()
+    
+    
+    query = """INSERT INTO libro(titulo,fecha_publicacion,idioma,isbn,numEdicion,numPaginas,url,editorial_id,biblioteca_id,imagen) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
+    cursor.execute(query, (titulo, fechaPublicacion, idioma, isbn, numEdicion, numPaginas, url, editorial_id, "1", imagen_binario))
+
+    
+    query1 = """SELECT id FROM libro WHERE titulo LIKE %s AND isbn = %s"""
+    cursor.execute(query1, ("%" + titulo + "%", isbn))
+    resultado = cursor.fetchone()
+
+    if resultado:
+            libro_id = resultado[0]
+
+            
+            query2 = """INSERT INTO libroComprado(precio, libro_id) VALUES(%s, %s)"""
+            cursor.execute(query2, (precio, libro_id))
+            conexion.commit()
+
+            
+            query3 = """SELECT id FROM libroComprado WHERE libro_id = %s"""
+            cursor.execute(query3, (libro_id,))
+            resultado1 = cursor.fetchone()
+            
+            if resultado1:
+                libro_comprado_id = resultado1[0]
+                
+                
+                query4 = """INSERT INTO Libro_Comprado_has_Proveedor(libro_comprado_id, proveedor_id) VALUES(%s, %s)"""
+                cursor.execute(query4, (libro_comprado_id, proveedor))
+                conexion.commit()
+
+
+    
+
+    
+
+    conexion.commit()
+    cursor.close()
+    conexion.close()
+    return jsonify({"status": "success"}), 200
 
 
 if __name__ == "__main__":
