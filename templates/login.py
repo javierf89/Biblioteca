@@ -48,7 +48,7 @@ def login():
 
     cursor = conexion.cursor()
     query = """
-    SELECT * FROM persona WHERE correoElectronico = %s AND contraseña = %s
+    SELECT persona.correoElectronico, usuario.contraseña FROM persona INNER JOIN usuario ON usuario.persona_id=persona.id WHERE correoElectronico = %s AND contraseña = %s
     """
     cursor.execute(query, (email, contraseña))
     user = cursor.fetchone()
