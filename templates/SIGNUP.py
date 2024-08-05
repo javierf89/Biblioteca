@@ -117,17 +117,144 @@ def agregar_libros():
                 query4 = """INSERT INTO Libro_Comprado_has_Proveedor(libro_comprado_id, proveedor_id) VALUES(%s, %s)"""
                 cursor.execute(query4, (libro_comprado_id, proveedor))
                 conexion.commit()
-
-
-    
-
-    
-
     conexion.commit()
     cursor.close()
     conexion.close()
     return jsonify({"status": "success"}), 200
 
+
+@app.route('/libros_donados' , methods=['GET'])
+def libros_donados():
+    conexion = db.open_connection()
+    query = """SELECT Titulo_Libro,imagen FROM Libros_Donados"""
+
+    try:
+        cursor = conexion.cursor()
+        cursor.execute(query)
+        resultados = cursor.fetchall()
+        cursor.close()
+        conexion.close() 
+
+        # Convertir imagen binaria a base64
+        libros = []
+        for fila in resultados:
+            titulo = fila[0]
+            imagen_binaria = fila[1]
+
+            if imagen_binaria:
+                imagen_base64 = base64.b64encode(imagen_binaria).decode('utf-8')
+            else:
+                imagen_base64 = None
+
+            libros.append({
+                "titulo": titulo,
+                "imagen": imagen_base64
+            })
+
+        return jsonify(libros), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+    
+
+
+@app.route('/prestamos_activos' , methods=['GET'])
+def prestamos_activos():
+    conexion = db.open_connection()
+    query = """SELECT titulo,imagen From Prestamos_Activos"""
+
+    try:
+        cursor = conexion.cursor()
+        cursor.execute(query)
+        resultados = cursor.fetchall()
+        cursor.close()
+        conexion.close() 
+
+        # Convertir imagen binaria a base64
+        libros = []
+        for fila in resultados:
+            titulo = fila[0]
+            imagen_binaria = fila[1]
+
+            if imagen_binaria:
+                imagen_base64 = base64.b64encode(imagen_binaria).decode('utf-8')
+            else:
+                imagen_base64 = None
+
+            libros.append({
+                "titulo": titulo,
+                "imagen": imagen_base64
+            })
+
+        return jsonify(libros), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+    
+
+@app.route('/libro_vendidos' , methods=['GET'])
+def libro_venvidos():
+    conexion = db.open_connection()
+    query = """SELECT libro.titulo,libro.imagen From libro INNER JOIN libroVendido ON libroVendido.libro_id=libro.id"""
+
+    try:
+        cursor = conexion.cursor()
+        cursor.execute(query)
+        resultados = cursor.fetchall()
+        cursor.close()
+        conexion.close() 
+
+        # Convertir imagen binaria a base64
+        libros = []
+        for fila in resultados:
+            titulo = fila[0]
+            imagen_binaria = fila[1]
+
+            if imagen_binaria:
+                imagen_base64 = base64.b64encode(imagen_binaria).decode('utf-8')
+            else:
+                imagen_base64 = None
+
+            libros.append({
+                "titulo": titulo,
+                "imagen": imagen_base64
+            })
+
+        return jsonify(libros), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+    
+
+@app.route('/libros_comprados' , methods=['GET'])
+def libro_comprados():
+    conexion = db.open_connection()
+    query = """SELECT libro.titulo,libro.imagen From libro INNER JOIN libroComprado ON libroComprado.libro_id=libro.id"""
+
+    try:
+        cursor = conexion.cursor()
+        cursor.execute(query)
+        resultados = cursor.fetchall()
+        cursor.close()
+        conexion.close() 
+
+        # Convertir imagen binaria a base64
+        libros = []
+        for fila in resultados:
+            titulo = fila[0]
+            imagen_binaria = fila[1]
+
+            if imagen_binaria:
+                imagen_base64 = base64.b64encode(imagen_binaria).decode('utf-8')
+            else:
+                imagen_base64 = None
+
+            libros.append({
+                "titulo": titulo,
+                "imagen": imagen_base64
+            })
+
+        return jsonify(libros), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+    
 
 if __name__ == "__main__":
     app.run(debug=True)
