@@ -7,7 +7,7 @@ body {
 
 .v31_230 {
   width: 100%;
-  height: 802px;
+  height: 1050px;
   background: rgba(0,0,0,1);
   opacity: 1;
   position: absolute;
@@ -87,7 +87,7 @@ body {
 }
 .v32_258 {
   width: 100%;
-  height: 575px;
+  height: 975px;
   background: url("../images/v32_258.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -573,7 +573,7 @@ body {
 
 .v32_326 {
   width: 537px;
-  height: 181px;
+  height: 300px;
   background: url("../images/v32_326.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -593,7 +593,7 @@ body {
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 342px;
+  top: 362px;
   left: 557px;
   overflow: hidden;
 }
@@ -657,7 +657,7 @@ body {
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 131px;
+  top: 180px;
   left: 16px;
   overflow: hidden;
 }
@@ -683,7 +683,7 @@ body {
   opacity: 1;
   position: absolute;
   top: 0px;
-  left: 229px;
+  left: 205px;
   overflow: hidden;
 }
 .v32_334 {
@@ -722,7 +722,7 @@ body {
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 522px;
+  top: 722px;
   left: 366px;
   overflow: hidden;
 }
@@ -956,7 +956,7 @@ body {
   width: 400px;
   height: 100px;
   margin-left: 100px;
-  margin-top: -50px;
+  margin-top: 0px;
 }
 
 .atras{
@@ -974,4 +974,60 @@ body {
   margin-top: 1000px;
   margin-left: 557px;
 
+}
+.v32_999 {
+  width: 476px;
+  height: 100px;
+  background: url("../images/v32_352.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 620px;
+  left: 67px;
+  overflow: hidden;
+}
+
+.v32_1000 {
+  width: 476px;
+  height: 100px;
+  background: url("../images/v32_352.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 720px;
+  left: 67px;
+  overflow: hidden;
+}
+
+
+.v32_1001 {
+  width: 476px;
+  height: 100px;
+  background: url("../images/v32_352.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 820px;
+  left: 67px;
+  overflow: hidden;
+}
+
+.v32_1002 {
+  width: 537px;
+  height: 181px;
+  background: url("../images/v32_326.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 762px;
+  left: 620px;
+  overflow: hidden;
 }

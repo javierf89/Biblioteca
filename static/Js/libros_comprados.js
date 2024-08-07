@@ -22,9 +22,28 @@ document.addEventListener("DOMContentLoaded", () => {
                 img.style.width = '100px'; 
                 img.style.height = 'auto';
 
+
+                const autor = document.createElement('span');
+                autor.className = 'libros-autor';
+                autor.innerText = `Nombre Proveedor: ${libro.nombreProveedor}`;
+
+                const precio = document.createElement('span');
+                precio.className = 'libros-precio';
+                precio.innerText = `Precio : ${libro.precio}`;
+
+
+                const nombreEditorial = document.createElement('span');
+                nombreEditorial.className = 'nombreEditorial';
+                nombreEditorial.innerText = `Nombre editorial : ${libro.nombreEditorial}`;
+                
+
+
+
                 libroElement.appendChild(title);
                 libroElement.appendChild(img);
-
+                libroElement.appendChild(autor);
+                libroElement.appendChild(precio);
+                libroElement.appendChild(nombreEditorial);
                 container.appendChild(libroElement);
             });
         })

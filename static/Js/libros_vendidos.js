@@ -22,9 +22,24 @@ document.addEventListener("DOMContentLoaded", () => {
                 img.style.width = '100px'; 
                 img.style.height = 'auto';
 
+                const autor = document.createElement('span');
+                autor.className = 'libros-autor';
+                autor.innerText = `Nombre: ${libro.nombre}`;
+
+
+                const precio = document.createElement('span');
+                precio.className = 'libros-precio';
+                precio.innerText = `Precio : ${libro.precio}`;
+
+                const idFactura = document.createElement('span');
+                idFactura.className = 'idFactura';
+                idFactura.innerText = `ID DE LA FACTURA: ${libro.factura}`;
+
                 libroElement.appendChild(title);
                 libroElement.appendChild(img);
-
+                libroElement.appendChild(autor);
+                libroElement.appendChild(precio);
+                libroElement.appendChild(idFactura);
                 container.appendChild(libroElement);
             });
         })

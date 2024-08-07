@@ -3,6 +3,7 @@
 }
 body {
   font-size: 14px;
+ 
 }
 .v24_64 {
   width: 262px;
@@ -11,7 +12,7 @@ body {
   opacity: 1;
   position: relative;
   top: 0px;
-  left: 0px;
+  margin-left: 500px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -163,4 +164,31 @@ body {
 .button:active {
   transform: scale(0.95);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.v24_100 {
+  width: 146px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 156px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Light Italic;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+
+.v24_101 {
+  width: 146px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 184px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Light Italic;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
 }

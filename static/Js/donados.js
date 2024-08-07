@@ -12,6 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 title.className = 'libros-title';
                 title.innerText = libro.titulo;
 
+                const autor = document.createElement('span');
+                autor.className = 'libros-autor';
+                autor.innerText = `Nombre: ${libro.nombre}`;
+
                 const img = document.createElement('img');
                 if (libro.imagen) {
                     img.src = `data:image/jpeg;base64,${libro.imagen}`;
@@ -24,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 libroElement.appendChild(title);
                 libroElement.appendChild(img);
-
+                libroElement.appendChild(autor);
                 container.appendChild(libroElement);
             });
         })

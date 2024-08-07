@@ -26,6 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             if (data.status === "success") {
                 // Redirigir al usuario a la página deseada después del inicio de sesión exitoso
+                let token = data.token;
+                localStorage.setItem('token',token);
                 window.location.href = '../index.html';
             } else {
                 // Mostrar mensaje de error en caso de fallo

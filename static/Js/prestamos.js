@@ -21,14 +21,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 img.alt = libro.titulo;
                 img.style.width = '100px'; 
                 img.style.height = 'auto';
+                img.style.marginTop = '0px';
+                img.style.marginBottom= '50px';
 
                 const button = document.createElement('button');
                 button.className = 'libros-button';
                 button.innerText = 'Prestar';
+              
                 button.addEventListener('click', () => {
-                    alert(`Prestar: ${libro.titulo}`);
-                });
+                    localStorage.setItem('prestamo', libro.isbn);
+                    alert(`ISBN guardado en localStorage: ${libro.isbn}`);
+                    window.location.href="no esta"
 
+                });
                 libroElement.appendChild(title);
                 libroElement.appendChild(img);
                 libroElement.appendChild(button);

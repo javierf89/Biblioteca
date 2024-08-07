@@ -9,9 +9,12 @@ function get_libros() {
     let editorial = document.getElementById("editorial").value;
     let precio = document.getElementById("precio").value;
     let proveedor = document.getElementById("codigoProveedor").value;
-
+    let autor = document.getElementById("codigoAutor").value;
     let input = document.getElementById("imagen");
     let imageData = '';
+    let tipo = document.getElementById("tipo").value;
+    let precioVenta = document.getElementById("precioVenta").value;
+    let observacion = document.getElementById("observacion").value;
 
     if (input.files && input.files[0]) {
         const file = input.files[0];
@@ -36,7 +39,11 @@ function get_libros() {
                 precio: precio,
                 editorial: editorial,
                 imageData: imagen_s,
-                proveedor:proveedor
+                proveedor:proveedor,
+                idautor:autor,
+                tipo:tipo,
+                precioVenta:precioVenta,
+                observacion:observacion
             };
 
            
