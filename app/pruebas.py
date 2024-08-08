@@ -5,3 +5,4 @@ def generate_unique_id():
 
 # Generar una clave única para un usuario
 token = generate_unique_id()
+print(token)

@@ -1,4 +1,4 @@
-function loadUserData() {
+document.addEventListener("DOMContentLoaded", () => {
     let token = localStorage.getItem('token');
 
     fetch('http://localhost:5000/userdate', {  
@@ -45,4 +45,4 @@ function loadUserData() {
     Registrarse.addEventListener('click', () => {
         window.location.href = '../html/signUp.html';  
     });
-};
+});

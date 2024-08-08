@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, redirect, url_for,render_template
 from flask_cors import CORS
 from Conexion import MyDatabase
 import base64
@@ -6,8 +6,9 @@ from io import BytesIO
 import uuid
 import mysql.connector
 from mysql.connector import Error
+from functools import wraps
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder='../templates')
 CORS(app) 
 db = MyDatabase()
 
@@ -413,7 +414,10 @@ def login():
 
     cursor = conexion.cursor()
     query = """
-    SELECT persona.correoElectronico, usuario.contraseña, usuario.token FROM persona INNER JOIN usuario ON usuario.persona_id=persona.id WHERE correoElectronico = %s AND contraseña = %s
+    SELECT persona.correoElectronico, usuario.contraseña, usuario.token,usuario.rol 
+    FROM persona 
+    INNER JOIN usuario ON usuario.persona_id=persona.id 
+    WHERE correoElectronico = %s AND contraseña = %s
     """
     cursor.execute(query, (email, contraseña))
     user = cursor.fetchone()
@@ -422,10 +426,61 @@ def login():
    
     if user:
         token = user[2] #el token esta en la tercera linea de la consulta
-        return jsonify({"status": "success", "token": token}), 200
+        rol=user[3]
+        if rol == 2:
+            pagina = "../html/libros.html"
+        else:
+            pagina = "../index.html"
+
+        dato = {
+            "token": token,
+            "pagina": pagina
+        }
+        return jsonify({"status": "success", "datos": dato}), 200
     else:
         return jsonify({"status": "error", "message": "Credenciales inválidas"}), 401
     
+
+
+def administrador(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        token = request.headers.get('Authorization')
+        if not token.startswith('Bearer '):
+            return jsonify({"status": "error", "message": "Token no proporcionado"}), 401
+        token = token.split(' ')[1]
+        
+        conexion = db.open_connection()
+        cursor = conexion.cursor()
+        query="""SELECT rol 
+        FROM usuario 
+        WHERE token=%s
+        """
+        cursor.execute(query,(token,))
+
+        resultado=cursor.fetchone()
+        cursor.close()
+        db.close_connection(conexion)
+
+        if resultado:
+            rol=resultado[0]
+            if rol==2:
+                return f(*args, **kwargs)
+            else:
+                return jsonify({"status": "error", "message": "no autorizado"}), 401
+    return decorated_function
+
+@app.route('/enviar_token', methods=['GET'])
+@administrador
+def enviar_token():
+    return jsonify({"status": "success", "message": "Acceso concedido"}), 200
+
+
+    
+
+
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
