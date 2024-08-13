@@ -99,7 +99,7 @@
   color: rgba(255, 255, 255, 1);
   width: 1154px;
   height: auto;
-  font-size: 26px;
+  font-size: 28px;
   font-style: ExtraLight;
   text-align: left;
   font-family: Source Sans Pro;
@@ -111,6 +111,7 @@
 .payment-form-property1-comprehensive-steps-single-image {
   top: 621px;
   left: 0px;
+  
   display: flex;
   position: absolute;
   align-self: stretch;
@@ -243,6 +244,11 @@
 }
 .payment-form-group81 {
   top: 0px;
+  color: rgba(182, 182, 198, 1);
+  font-size: 24px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
   left: 190px;
   width: 292px;
   height: 50px;
@@ -250,12 +256,13 @@
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
-  border-radius: var(--dl-radius-radius-round);
+  border-radius: 20px;
   background-color: rgba(84, 84, 94, 1);
-  border-top-left-radius: var(--dl-radius-radius-round);
-  border-top-right-radius: var(--dl-radius-radius-round);
-  border-bottom-left-radius: var(--dl-radius-radius-round);
-  border-bottom-right-radius: var(--dl-radius-radius-round);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow:hidden;
 }
 .payment-form-text022 {
   top: 13px;
@@ -300,6 +307,11 @@
 }
 .payment-form-group82 {
   top: 0px;
+  color: rgba(182, 182, 198, 1);
+  font-size: 24px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
   left: 190px;
   width: 292px;
   height: 50px;
@@ -308,6 +320,11 @@
   align-items: flex-start;
   flex-shrink: 1;
   background-color: rgba(84, 84, 94, 1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow:hidden;
 }
 .payment-form-text026 {
   top: 13px;
@@ -352,6 +369,11 @@
 }
 .payment-form-group83 {
   top: 0px;
+  color: rgba(182, 182, 198, 1);
+  font-size: 24px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
   left: 220px;
   width: 292px;
   height: 50px;
@@ -360,6 +382,11 @@
   align-items: flex-start;
   flex-shrink: 1;
   background-color: rgba(84, 84, 94, 1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow:hidden;
 }
 .payment-form-text030 {
   top: 13px;
@@ -404,6 +431,11 @@
 }
 .payment-form-group84 {
   top: 0px;
+  color: rgba(182, 182, 198, 1);
+  font-size: 24px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
   left: 220px;
   width: 292px;
   height: 50px;
@@ -412,6 +444,11 @@
   align-items: flex-start;
   flex-shrink: 1;
   background-color: rgba(84, 84, 94, 1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow:hidden;
 }
 .payment-form-text034 {
   top: 13px;
@@ -456,14 +493,24 @@
 }
 .payment-form-group85 {
   top: 0px;
+  color: rgba(182, 182, 198, 1);
+  font-size: 24px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
   left: 198px;
-  width: 866px;
+  width: 800px;
   height: 50px;
   display: flex;
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
   background-color: rgba(84, 84, 94, 1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow:hidden;
 }
 .payment-form-text038 {
   top: 13px;
@@ -515,6 +562,11 @@
 }
 .payment-form-group17 {
   top: 276px;
+  color: rgba(182, 182, 198, 1);
+  font-size: 24px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
   left: 303.75px;
   width: 760px;
   height: 50px;
@@ -523,6 +575,11 @@
   align-items: flex-start;
   flex-shrink: 1;
   background-color: rgba(84, 84, 94, 1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow:hidden;
 }
 .payment-form-text044 {
   top: 14px;
@@ -542,6 +599,11 @@
 }
 .payment-form-group18 {
   top: 347px;
+  color: rgba(182, 182, 198, 1);
+  font-size: 24px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
   left: 309.75px;
   width: 760px;
   height: 49px;
@@ -550,6 +612,11 @@
   align-items: flex-start;
   flex-shrink: 1;
   background-color: rgba(84, 84, 94, 1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow:hidden;
 }
 .payment-form-text046 {
   top: 19px;
@@ -625,6 +692,7 @@
   align-items: flex-start;
   flex-shrink: 1;
   background-color: rgba(84, 84, 94, 1);
+  border-radius: 100%;
 }
 .payment-form-text054 {
   top: 448.375px;
@@ -658,10 +726,10 @@
   width: 31px;
   height: 32px;
   position: absolute;
-  border-color: rgba(249, 168, 4, 1);
+  background-color: rgba(249, 168, 4, 1);
   border-style: solid;
   border-width: 1px;
-  border-radius: 188px;
+  border-radius: 100%;
 }
 .payment-form-rectangle81 {
   left: 286px;
@@ -795,26 +863,37 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.payment-form-rectangle10 {
+.checkbox-input {
   top: 375px;
-  left: 1029.8125px;
+  left: 989.8125px;
   width: 40px;
-  height: 36px;
+  height: 30px;
   position: absolute;
   border-color: rgba(249, 168, 4, 1);
   border-style: solid;
   border-width: 1px;
+  background-color: rgba(249, 168, 4, 1);
 }
 .payment-form-group86 {
   top: 0px;
-  left: 111.875px;
-  width: 957.8749389648438px;
-  height: 82px;
+  color: rgba(182, 182, 198, 1);
+  font-size: 24px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
+  left: 89px;
+  width: 957.625px;
+  height: 60px;
   display: flex;
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
   background-color: rgba(84, 84, 94, 1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow:hidden;
 }
 .payment-form-text064 {
   top: 21.31999969482422px;
@@ -880,6 +959,11 @@
 }
 .payment-form-group171 {
   top: 99px;
+  color: rgba(182, 182, 198, 1);
+  font-size: 24px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
   left: 120.25px;
   width: 957.625px;
   height: 50px;
@@ -888,6 +972,11 @@
   align-items: flex-start;
   flex-shrink: 1;
   background-color: rgba(84, 84, 94, 1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow:hidden;
 }
 .payment-form-text072 {
   top: 13px;
@@ -907,6 +996,11 @@
 }
 .payment-form-group181 {
   top: 166px;
+  color: rgba(182, 182, 198, 1);
+  font-size: 24px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
   left: 119.984375px;
   width: 365px;
   height: 49px;
@@ -915,6 +1009,11 @@
   align-items: flex-start;
   flex-shrink: 1;
   background-color: rgba(84, 84, 94, 1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow:hidden;
 }
 .payment-form-text074 {
   top: 13px;
@@ -934,7 +1033,12 @@
 }
 .payment-form-group202 {
   top: 166px;
-  left: 717.96875px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
+  left: 727.96875px;
   width: 360px;
   height: 49px;
   display: flex;
@@ -942,6 +1046,12 @@
   align-items: flex-start;
   flex-shrink: 1;
   background-color: rgba(249, 168, 4, 1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow:hidden;
+
 }
 .payment-form-text075 {
   top: 13px;
@@ -981,10 +1091,10 @@
   width: 1058px;
   height: auto;
   position: absolute;
-  font-size: 24px;
+  font-size: 25px;
   font-style: Extra Light;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 300;
   line-height: normal;
   font-stretch: normal;
@@ -1002,10 +1112,23 @@
 }
 .payment-form-rectangle84 {
   top: 0px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-style: italic;
+  text-align: left;
+  font-family: Inter;
   left: 0px;
   width: 772px;
   height: 49px;
   position: absolute;
+  background-color:  rgba(249, 168, 4, 1);
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow:hidden;
+
 }
 .payment-form-text081 {
   top: 12.5px;
@@ -1033,8 +1156,18 @@
   align-items: flex-start;
   flex-shrink: 1;
 }
-.payment-form-rectangle5 {
+.button {
   top: 19px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: dashed;
   left: 0px;
   width: 355px;
   height: 53px;
@@ -1043,6 +1176,14 @@
   border-style: solid;
   border-width: 1px;
   border-radius: 20px;
+  background-color:  rgba(249, 168, 4, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1); 
 }
 .payment-form-text083 {
   top: 33px;

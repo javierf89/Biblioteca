@@ -22,8 +22,8 @@
         text-transform: none;
         letter-spacing: normal;
         line-height: 1.15;
-        color: var(--dl-color-theme-neutral-dark);
-        background-color: var(--dl-color-theme-neutral-light);
+        color: black;
+        background-color: rgba(24, 24, 27, 1);
 
         fill: var(--dl-color-theme-neutral-dark);
       }
@@ -56,6 +56,7 @@
       rel="stylesheet"
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
+    <link href="../css/factura.css" rel="stylesheet" />
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -66,7 +67,7 @@
         <div class="payment-form-container1">
           <div class="payment-form-brand">
             <img
-              src="public/external/vector1365-qpie.svg"
+              src="../public/external/vector1365-qpie.svg"
               alt="Vector1365"
               class="payment-form-vector"
             />
@@ -75,7 +76,7 @@
             </span>
           </div>
           <img
-            src="public/external/vector1366-cf14.svg"
+            src="../public/external/vector1366-cf14.svg"
             alt="Vector1366"
             class="payment-form-vector1"
           />
@@ -83,6 +84,8 @@
         <div class="payment-form-payment-form">
           <div class="payment-form-selling-book-payment">
             <div class="payment-form-group22"></div>
+            <br/>
+            <br/>
             <span class="payment-form-text002">
               <span>Bienvenido a la Biblioteca Virtual</span>
               <br />
@@ -123,76 +126,59 @@
                     <span class="payment-form-text016">
                       <span>Primer Nombre:</span>
                     </span>
-                    <div class="payment-form-group8">
-                      <span class="payment-form-text018">
-                        <span>Primer Nombre</span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="payment-form-group12">
-                    <span class="payment-form-text020">
-                      <span>Primer Nombre:</span>
-                    </span>
-                    <div class="payment-form-group81">
+                   
+                    
                       <span class="payment-form-text022">
-                        <span>Primer Nombre</span>
+                        <input type="text" class="payment-form-group81" type="radio" id="primerNombre" placeholder="  Primer Nombre"  required>
                       </span>
-                    </div>
+                    
                   </div>
                   <div class="payment-form-group11">
                     <span class="payment-form-text024">
                       <span>Primer Apellido:</span>
                     </span>
-                    <div class="payment-form-group82">
+                    
                       <span class="payment-form-text026">
-                        <span>Primer Apellido</span>
-                      </span>
-                    </div>
+                        <input type="text" class="payment-form-group82" type="radio" id="primerApellido" placeholder="  Primer Apellido"  required>
+                       </span>
+                    
                   </div>
                   <div class="payment-form-group10">
                     <span class="payment-form-text028">
                       <span>Segundo Nombre:</span>
                     </span>
-                    <div class="payment-form-group83">
                       <span class="payment-form-text030">
-                        <span>Segundo Nombre</span>
+                        <input type="text" class="payment-form-group83" type="radio" id="segundoNombre" placeholder="  Segundo Nombre"  required>
                       </span>
-                    </div>
                   </div>
                   <div class="payment-form-group13">
                     <span class="payment-form-text032">
                       <span>Segundo Apellido:</span>
                     </span>
-                    <div class="payment-form-group84">
                       <span class="payment-form-text034">
-                        <span>Segundo Apellido</span>
+                        <input type="text" class="payment-form-group84" type="radio" id="segundoApellido" placeholder="  Segundo Apellido"  required>
                       </span>
-                    </div>
+                   
                   </div>
                   <div class="payment-form-group15">
                     <span class="payment-form-text036">
                       <span>Telefono:</span>
                     </span>
-                    <div class="payment-form-group85">
                       <span class="payment-form-text038">
-                        <span>+504 0000 0000</span>
+                        <input type="text" class="payment-form-group85" type="radio" id="telefono" placeholder="  +504 0000 0000"  required>
                       </span>
-                    </div>
+                    
                   </div>
                   <span class="payment-form-text040"><span>Email:</span></span>
                   <span class="payment-form-text042">
                     <span>Contraseña:</span>
                   </span>
-                  <div class="payment-form-group17">
                     <span class="payment-form-text044">
-                      <span>usuario@gmail.com</span>
+                      <input type="text" class="payment-form-group17" type="radio" id="telefono" placeholder="usuario@gmail.com"  required>
                     </span>
-                  </div>
-                  <div class="payment-form-group18">
                     <span class="payment-form-text046">
-                      <span>**********************</span>
+                        <input type="password" class="payment-form-group18" type="password" id="telefono" placeholder=" ***************************"  required>
                     </span>
-                  </div>
                   <span class="payment-form-text048">
                     <span>Membresia:</span>
                   </span>
@@ -202,40 +188,26 @@
                   <span class="payment-form-text052">
                     <span>Platinum</span>
                   </span>
-                  <div class="payment-form-group19"></div>
+                  <input type="radio" class="payment-form-group19" name="opcionesMembresia" value="Platinum" required>
                   <span class="payment-form-text054"><span>Premiun</span></span>
                   <div class="payment-form-group201">
-                    <img
-                      src="public/external/rectangle81361-9hmj-200w.png"
-                      alt="Rectangle81361"
-                      class="payment-form-rectangle8"
-                    />
-                    <img
-                      src="public/external/rectangle81361-9hmj-200w.png"
-                      alt="Rectangle81361"
-                      class="payment-form-rectangle81"
-                    />
+                    <input type="radio" name="opsionesMembresia" class="payment-form-rectangle8" value="option2" required>
+                    <input type="radio" name="optionesMembresia" class="payment-form-rectangle81" value="option3" required>
                     <span class="payment-form-text056">
                       <span>Basica</span>
                     </span>
                   </div>
                   <div class="payment-form-group21">
-                    <img
-                      src="public/external/rectangle81361-1dnq-200w.png"
-                      alt="Rectangle81361"
-                      class="payment-form-rectangle82"
-                    />
+                    <input type="radio" name="opsionesPago" class="payment-form-rectangle82" value="option1" required>
+                    
                     <span class="payment-form-text058">
                       <span>PayPal</span>
                     </span>
                     <span class="payment-form-text060">
                       <span>Transferencia</span>
                     </span>
-                    <img
-                      src="public/external/rectangle81361-1dnq-200w.png"
-                      alt="Rectangle81361"
-                      class="payment-form-rectangle83"
-                    />
+                    <input type="radio" name="opcionesPago" class="payment-form-rectangle83" value="option1" required>
+                    
                   </div>
                 </div>
               </div>
@@ -244,31 +216,22 @@
               <div class="payment-form-group211">
                 <div class="payment-form-group151">
                   <span class="payment-form-text062"><span>Libro:</span></span>
-                  <img
-                    src="public/external/rectangle101361-iu38-200h.png"
-                    alt="Rectangle101361"
-                    class="payment-form-rectangle10"
-                  />
-                  <div class="payment-form-group86">
+                  <input type="radio" name="options" value="option1" class="selection-input" required>
+                  <input type="checkbox" name="option1" value="option1" class="checkbox-input">
+                 
                     <span class="payment-form-text064">
-                      <span>Nombre del Libro</span>
+                      <input type="text" class="payment-form-group86" type="radio" id="nombreLibro" placeholder=" Nombre de Libro"  required>
                     </span>
-                  </div>
                 </div>
                 <span class="payment-form-text066"><span>ISBN:</span></span>
-                <span class="payment-form-text068"><span>Cantidad</span></span>
+                <span class="payment-form-text068"><span>Cantidad:</span></span>
                 <span class="payment-form-text070">
                   <span>Precio Unitario:</span>
                 </span>
-                <div class="payment-form-group171">
-                  <span class="payment-form-text072"><span>ISBN</span></span>
-                </div>
-                <div class="payment-form-group181">
-                  <span class="payment-form-text074">0</span>
-                </div>
-                <div class="payment-form-group202">
-                  <span class="payment-form-text075"><span>0.00</span></span>
-                </div>
+                  <input type="text" class="payment-form-group171" type="radio" id="isbn" placeholder=" ISBN"  required>
+                  <input type="text" class="payment-form-group181" type="radio" id="cantidadLibro" placeholder=" 0"  required>
+                  <input type="text" class="payment-form-group202" type="radio" id="precioUnitario" placeholder=" 0.00"  required>
+                
                 <span class="payment-form-text077">
                   <span>Total a Pagar:</span>
                 </span>
@@ -279,21 +242,16 @@
                   </span>
                 </span>
                 <div class="payment-form-group191">
-                  <img
-                    src="public/external/rectangle81361-t8ho.svg"
-                    alt="Rectangle81361"
-                    class="payment-form-rectangle84"
-                  />
-                  <span class="payment-form-text081"><span>0.00</span></span>
+                </span>
+                <input type="text" class="payment-form-rectangle84" type="radio" id="total" placeholder=" 0.00"  required>
                 </div>
                 <div class="payment-form-group16">
-                  <img
-                    src="public/external/rectangle51361-epns-200h.png"
-                    alt="Rectangle51361"
-                    class="payment-form-rectangle5"
-                  />
+                  
                   <span class="payment-form-text083">
-                    <span>Efectuar Compra</span>
+                    
+                    <button class="button" type="submit" class="button">Efectuar Compra</button>
+
+
                   </span>
                   <div class="payment-form-frame2"></div>
                 </div>
@@ -323,7 +281,7 @@
               </div>
               <div class="payment-form-brand1">
                 <img
-                  src="public/external/icon1351-ywdp.svg"
+                  src="../public/external/icon1351-ywdp.svg"
                   alt="Icon1351"
                   class="payment-form-icon"
                 />
@@ -334,7 +292,7 @@
             </div>
             <div class="payment-form-credits">
               <img
-                src="public/external/divider1351-p5ka-200h.png"
+                src="../public/external/divider1351-p5ka-200h.png"
                 alt="Divider1351"
                 class="payment-form-divider"
               />
