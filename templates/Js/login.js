@@ -52,5 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch(error => {
         console.error('Error:', error);
     });
+
+    if user:
+        console.log("hola mundo");
     
 });
