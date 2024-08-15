@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="../css/signUp.css" rel="stylesheet">
+    <script>
+        function volverInicio() {
+            window.location.href = '../index.html';
+            
+        }
+        function volverLogin() {
+            window.location.href = './login.html';
+            
+        }
+    </script>
+
 </head>
 <body>
-    <div class="v23_22">
+    <div class="v23_22"></div>
         <span class="v23_23">Regístrate</span>
         <div class="v24_307">
-            <span class="v23_24">Complete la información del usuario</span>
+            <span class="v23_24">Completa la información del usuario</span>
             
             <div class="v23_63">
                 <span class="v23_27">Primer Nombre: </span>
                 <div class="v23_62">
                    
-                    <input type="text" class="v23_30" type="radio" id="primerNombre" placeholder="Primer Nombre"  required>
+                    <input type="text" class="v23_30" type="radio" id="primerNombre" placeholder=" Primer Nombre"  required>
                 </div>
             </div>
             
@@ -26,35 +36,35 @@
             <div class="v23_69">
                 <span class="v23_70">Primer Apellido: </span>
                 <div class="v23_71">
-                    <input type="text" class="v23_30" type="radio" id="primerApellido" placeholder="Primer Apellido"  required>
+                    <input type="text" class="v23_30" type="radio" id="primerApellido" placeholder=" Primer Apellido"  required>
                 </div>
             </div>
             
             <div class="v23_64">
                 <span class="v23_65">Segundo Nombre: </span>
                 <div class="v23_66">
-                    <input type="text" class="v23_30" type="radio" id="segundoNombre" placeholder="Segundo Nombre"  required>
+                    <input type="text" class="v23_30" type="radio" id="segundoNombre" placeholder=" Segundo Nombre"  required>
                 </div>
             </div>
             
             <div class="v23_79">
                 <span class="v23_80">Segundo Apellido: </span>
                 <div class="v23_81">
-                    <input type="text" class="v23_30" type="radio" id="segundoApellido" placeholder="Segundo Apellido"  required>
+                    <input type="text" class="v23_30" type="radio" id="segundoApellido" placeholder=" Segundo Apellido"  required>
                 </div>
             </div>
             
             <div class="v23_85">
                 <span class="v23_86">Teléfono:</span>
                 <div class="v23_87">
-                    <input type="text" class="v23_30" type="radio" id="telefono" placeholder="+504 0000 0000"  required>
+                    <input type="text" class="v23_30" type="radio" id="telefono" placeholder=" +504 0000 0000"  required>
                 </div>
             </div>
             
             <div class="v23_84">
                 <span class="v23_28">Fecha de Nacimiento:</span>
                 <div class="v23_29">
-                    <input type="text" class="v23_30" type="radio" id="fechaNacimiento" placeholder="31/12/2024"  required>
+                    <input type="text" class="v23_30" type="radio" id="fechaNacimiento" placeholder=" 31/12/2024"  required>
                 </div>
                 
             </div>
@@ -63,35 +73,35 @@
             <span class="v23_35">Contraseña: </span>
             
             <div class="v23_91">
-                <input type="text" class="v23_37" type="radio" id="email" placeholder="usuario@gmail.com"  required>
+                <input type="text" class="v23_37" type="radio" id="email" placeholder=" usuario@gmail.com"  required>
             </div>
             
             <div class="v23_92">
-                <div class="v23_36"><input type="text" class="v23_37" type="radio" id="contraseña" placeholder="**********************"  required></div>
+                <div class="v23_36"><input type="password" class="v23_37" type="radio" id="contraseña" placeholder=" ................................."  required></div>
             </div>
             
             <span class="v23_40">Confirmar Contraseña: </span>
             
             <div class="v23_93">
-                <div class="v23_41"><input type="text" class="v23_37" type="radio" id="contraseña1" placeholder="**********************"  required></div>
+                <div class="v23_41"><input type="password" class="v23_37" type="radio" id="contraseña1" placeholder=" ................................."  required></div>
             </div>
             
            
         </div>
         
         <div class="v31_166">
-            <button type="submit" class="button" onclick="getValores()">Agregar datos</button>
+            <button type="submit" class="button" onclick="getValores()">Registrar Datos</button>
            
         </div>
         
-        <div class="v23_44">
+        <div onclick="volverLogin()" class="v23_44">
             <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M23.6098 7.10141H6.80137L10.8326 3.15953C11.1626 2.83539 11.3481 2.39577 11.3481 1.93737C11.3481 1.47897 11.1626 1.03935 10.8326 0.715217C10.5026 0.391081 10.0549 0.208984 9.58817 0.208984C9.12142 0.208984 8.67379 0.391081 8.34375 0.715217L1.33292 7.60059C1.17335 7.7643 1.04827 7.95734 0.964851 8.16864C0.789548 8.58772 0.789548 9.05778 0.964851 9.47686C1.04827 9.68816 1.17335 9.8812 1.33292 10.0449L8.34375 16.9303C8.50669 17.0916 8.70054 17.2197 8.91412 17.3071C9.12771 17.3945 9.35679 17.4395 9.58817 17.4395C9.81955 17.4395 10.0486 17.3945 10.2622 17.3071C10.4758 17.2197 10.6697 17.0916 10.8326 16.9303C10.9969 16.7703 11.1273 16.5799 11.2162 16.3701C11.3052 16.1604 11.351 15.9354 11.351 15.7081C11.351 15.4809 11.3052 15.2559 11.2162 15.0461C11.1273 14.8364 10.9969 14.646 10.8326 14.486L6.80137 10.5441H23.6098C24.0747 10.5441 24.5205 10.3627 24.8492 10.0399C25.1779 9.71711 25.3625 9.27928 25.3625 8.82275C25.3625 8.36622 25.1779 7.92839 24.8492 7.60558C24.5205 7.28276 24.0747 7.10141 23.6098 7.10141Z" fill="white"/>
             </svg>
 
         </div>
         
-        <div class="v23_57">
+        <div onclick="volverInicio()" class="v23_57" >
             <div class="v23_58">
                 <div class="v23_59">
                     <svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,7 +110,7 @@
                         
                 </div>
             </div>
-            <span class="v23_60">Biblioteca Virtual</span>
+            <span  class="v23_60">Biblioteca Virtual</span>
         </div>
     </div>
 

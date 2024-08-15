@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(error => {
         console.error('Error:', error);
-        alert('Hubo un problema al procesar su solicitud. Por favor, intente nuevamente.');
+        alert('Hubo un problema al procesar tu solicitud. Por favor, intenta nuevamente.');
     });
 
     const incio_sesion = document.getElementById('incio_sesion');

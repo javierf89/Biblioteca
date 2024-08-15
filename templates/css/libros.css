@@ -24,7 +24,7 @@ body {
   position: absolute;
   top: 123px;
   left: 610px;
-  font-family: Inter;
+  /*font-family: Inter;*/
   font-weight: Semi Bold;
   font-size: 48px;
   opacity: 1;
@@ -37,10 +37,10 @@ body {
   opacity: 1;
   position: absolute;
   top: 46px;
-  left: 34px;
+  left: 50px;
 }
 .v32_366 {
-  width: 393px;
+  width: 450px;
   height: 68px;
   background: url("../public/external/images/");
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@ body {
   height: 64px;
   opacity: 1;
   position: absolute;
-  top: 2px;
+  top: -8px;
   left: 0px;
   overflow: hidden;
 }
@@ -75,7 +75,7 @@ body {
   color: rgba(255,255,255,1);
   position: absolute;
   top: 0px;
-  left: 72px;
+  left: 82px;
   font-family: Source Sans Pro;
   font-weight: Regular;
   font-size: 45px;

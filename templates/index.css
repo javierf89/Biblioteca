@@ -27,7 +27,7 @@
   justify-content: space-between;
 }
 .virtual-library-bubble-container {
-  gap: 58px;
+  gap: 5px;
   display: flex;
   padding: 16px 8px;
   position: relative;
@@ -54,7 +54,7 @@
 .virtual-library-text {
   color: rgba(36, 36, 36, 1);
   height: auto;
-  font-size: 12px;
+  font-size: 14px;
   font-style: Regular;
   text-align: left;
   font-family: Source Sans Pro;
@@ -62,6 +62,7 @@
   line-height: 160.0000023841858%;
   font-stretch: normal;
   text-decoration: none;
+  cursor: pointer;
 }
 .virtual-library-nav-link1 {
   gap: 8px;
@@ -73,7 +74,7 @@
 .virtual-library-text002 {
   color: rgba(36, 36, 36, 1);
   height: auto;
-  font-size: 12px;
+  font-size: 14px;
   font-style: Regular;
   text-align: left;
   font-family: Source Sans Pro;
@@ -92,7 +93,7 @@
 .virtual-library-text004 {
   color: rgba(36, 36, 36, 1);
   height: auto;
-  font-size: 12px;
+  font-size: 14px;
   font-style: Regular;
   text-align: left;
   font-family: Source Sans Pro;
@@ -106,6 +107,7 @@
   display: flex;
   padding: 0 16px;
   z-index: 1;
+  left: 0px;
   align-items: center;
   justify-content: center;
 }
@@ -119,7 +121,7 @@
 .virtual-library-text006 {
   color: rgba(36, 36, 36, 1);
   height: auto;
-  font-size: 12px;
+  font-size: 14px;
   font-style: Regular;
   text-align: left;
   font-family: Source Sans Pro;
@@ -138,7 +140,7 @@
 .virtual-library-text008 {
   color: rgba(36, 36, 36, 1);
   height: auto;
-  font-size: 12px;
+  font-size: 14px;
   font-style: Regular;
   text-align: left;
   font-family: Source Sans Pro;
@@ -161,7 +163,7 @@
 .virtual-library-text010 {
   color: rgba(36, 36, 36, 1);
   height: auto;
-  font-size: 16px;
+  font-size: 20px;
   font-style: Regular;
   text-align: left;
   font-family: Source Sans Pro;
