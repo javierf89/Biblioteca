@@ -66,7 +66,7 @@
   align-self: stretch;
   font-style: Bold;
   text-align: center;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 700;
   line-height: 120.00000476837158%;
   font-stretch: normal;
@@ -111,7 +111,7 @@
   font-size: 20px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -142,9 +142,13 @@
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(32, 32, 32);
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(123, 123, 136, 1);
   border: 1px solid rgba(249,168,4,1);
-  border-radius: 20px;
+  border-radius: 7px;
 }
 .home-booksandservicesof-vl-text08 {
   top: 7.607609272003174px;
@@ -156,7 +160,7 @@
   font-size: 16px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -182,7 +186,7 @@
   font-size: 20px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -209,7 +213,7 @@
   font-size: 16px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -234,7 +238,7 @@
   font-size: 20px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -261,7 +265,7 @@
   font-size: 16px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -286,7 +290,7 @@
   font-size: 20px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -313,7 +317,7 @@
   font-size: 16px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -338,7 +342,7 @@
   font-size: 20px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -365,7 +369,7 @@
   font-size: 16px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -389,7 +393,7 @@
   font-size: 20px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -401,10 +405,15 @@
   width: 287px;
   height: 26px;
   position: absolute;
+  background-color: rgb(32, 32, 32);
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(123, 123, 136, 1);
   border-color: rgba(249, 168, 4, 1);
   border-style: solid;
   border-width: 1px;
-  border-radius: 20px;
+  border-radius: 7px;
 }
 .home-booksandservicesof-vl-text30 {
   top: 7.3220319747924805px;
@@ -416,7 +425,7 @@
   font-size: 16px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;

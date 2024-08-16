@@ -733,6 +733,7 @@ body {
   position: absolute;
   top: 46px;
   left: 34px;
+  cursor: pointer;
 }
 .v23_57 {
   width: 420px;
@@ -815,3 +816,4 @@ body {
   transform: scale(0.95); 
   box-shadow: 0px 2px 4px rgba(0,0,0,0.2); 
 }
+

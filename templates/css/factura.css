@@ -159,7 +159,7 @@
   font-size: 24px;
   font-style: Regular;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 400;
   line-height: normal;
   font-stretch: normal;
@@ -184,7 +184,7 @@
   font-size: 24px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -211,7 +211,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -236,7 +236,7 @@
   font-size: 24px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -248,7 +248,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   left: 190px;
   width: 292px;
   height: 50px;
@@ -274,7 +274,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -299,7 +299,7 @@
   font-size: 24px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -311,7 +311,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   left: 190px;
   width: 292px;
   height: 50px;
@@ -336,7 +336,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -361,7 +361,7 @@
   font-size: 24px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -373,7 +373,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   left: 220px;
   width: 292px;
   height: 50px;
@@ -398,7 +398,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -423,7 +423,7 @@
   font-size: 24px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -435,7 +435,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   left: 220px;
   width: 292px;
   height: 50px;
@@ -460,7 +460,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -477,7 +477,7 @@
   flex-shrink: 1;
 }
 .payment-form-text036 {
-  top: 2px;
+  top: 8px;
   color: rgba(249, 168, 4, 1);
   width: 176px;
   height: auto;
@@ -485,7 +485,7 @@
   font-size: 24px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -497,7 +497,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   left: 198px;
   width: 800px;
   height: 50px;
@@ -522,7 +522,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -538,7 +538,7 @@
   font-size: 24px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -554,7 +554,7 @@
   font-size: 24px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -564,9 +564,10 @@
   top: 276px;
   color: rgba(182, 182, 198, 1);
   font-size: 24px;
-  font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
+  font-style: italic;
+  font-weight: 400;
   left: 303.75px;
   width: 760px;
   height: 50px;
@@ -591,7 +592,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -603,7 +604,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   left: 309.75px;
   width: 760px;
   height: 49px;
@@ -628,7 +629,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -644,7 +645,7 @@
   font-size: 24px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -660,7 +661,7 @@
   font-size: 24px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -676,7 +677,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -704,7 +705,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -752,7 +753,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -788,7 +789,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -804,7 +805,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -849,7 +850,7 @@
   flex-shrink: 1;
 }
 .payment-form-text062 {
-  top: 3.2799999713897705px;
+  top: 14px;
   color: rgba(249, 168, 4, 1);
   width: 177px;
   height: auto;
@@ -857,7 +858,7 @@
   font-size: 24px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -872,7 +873,7 @@
   border-color: rgba(249, 168, 4, 1);
   border-style: solid;
   border-width: 1px;
-  background-color: rgba(249, 168, 4, 1);
+ 
 }
 .payment-form-group86 {
   top: 0px;
@@ -880,7 +881,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   left: 89px;
   width: 957.625px;
   height: 60px;
@@ -905,7 +906,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -913,6 +914,7 @@
 }
 .payment-form-text066 {
   top: 112.5px;
+  left: 10px;
   color: rgba(249, 168, 4, 1);
   width: 70px;
   height: auto;
@@ -920,7 +922,7 @@
   font-size: 24px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -928,6 +930,7 @@
 }
 .payment-form-text068 {
   top: 182.5px;
+  left: 10px;
   color: rgba(249, 168, 4, 1);
   width: 144px;
   height: auto;
@@ -935,7 +938,7 @@
   font-size: 24px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -951,7 +954,7 @@
   font-size: 24px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -963,7 +966,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   left: 120.25px;
   width: 957.625px;
   height: 50px;
@@ -971,11 +974,9 @@
   position: absolute;
   align-items: flex-start;
   flex-shrink: 1;
-  background-color: rgba(84, 84, 94, 1);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+   background-color: rgba(84, 84, 94, 1);
+  border: 1px solid rgba(182, 182, 198, 1);
+  border-radius: 8px;
   overflow:hidden;
 }
 .payment-form-text072 {
@@ -988,7 +989,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: center;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -1000,7 +1001,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   left: 119.984375px;
   width: 365px;
   height: 49px;
@@ -1025,7 +1026,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 100;
   line-height: normal;
   font-stretch: normal;
@@ -1037,7 +1038,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   left: 727.96875px;
   width: 360px;
   height: 49px;
@@ -1063,7 +1064,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 400;
   line-height: normal;
   font-stretch: normal;
@@ -1071,6 +1072,7 @@
 }
 .payment-form-text077 {
   top: 255.5px;
+  left: 10px;
   color: rgba(249, 168, 4, 1);
   width: 268px;
   height: auto;
@@ -1078,17 +1080,17 @@
   font-size: 24px;
   font-style: Medium;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
-  text-decoration: none;
+  text-decoration: none; 
 }
 .payment-form-text079 {
-  top: 363px;
+  top: 372px;
   left: 7.9375px;
   color: rgba(255, 255, 255, 1);
-  width: 1058px;
+  width: 900px;
   height: auto;
   position: absolute;
   font-size: 25px;
@@ -1116,7 +1118,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   left: 0px;
   width: 772px;
   height: 49px;
@@ -1140,7 +1142,7 @@
   font-size: 24px;
   font-style: italic;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 400;
   line-height: normal;
   font-stretch: normal;
@@ -1163,8 +1165,9 @@
   font-size: 24px;
   font-style: Bold;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 700;
+  font-style: italic;
   line-height: normal;
   font-stretch: normal;
   text-decoration: dashed;
@@ -1180,14 +1183,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 30px;
   cursor: pointer;
   box-shadow: 0px 4px 6px rgba(0,0,0,0.1); 
 }
 .payment-form-text083 {
   top: 33px;
-  left: 70px;
+  left: 40px;
   color: rgba(254, 251, 251, 1);
   width: 217px;
   height: auto;
@@ -1195,7 +1198,7 @@
   font-size: 24px;
   font-style: Bold;
   text-align: left;
-  font-family: Inter;
+  font-family: Source Sans Pro;
   font-weight: 700;
   line-height: normal;
   font-stretch: normal;
