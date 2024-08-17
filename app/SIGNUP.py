@@ -477,6 +477,45 @@ def enviar_token():
 
 
     
+@app.route('/usuario',methods=['POST'])
+def usuario():
+    data = request.json
+    token = data.get('token')
+
+    conexion= db.open_connection()
+    cursor = conexion.cursor()
+
+    query="""  SELECT  usuario.token as token,persona.nombre1,persona.nombre2,persona.apellido1,persona.apellido2,persona.fechaNacimiento,telefono.numTelefono
+                FROM persona 
+                INNER JOIN usuario ON usuario.persona_id=persona.id 
+                left JOIN telefono ON persona.id=telefono.persona_id
+                WHERE usuario.token = %s;
+    """
+
+    cursor.execute(query,(token,))
+    resultado = cursor.fetchone()
+
+    if resultado: 
+        primerNombre= resultado[1]
+        segundoNombre = resultado[2]
+        primerApellido = resultado[3]
+        segundoApellido = resultado[4]
+        fechaNacimiento = resultado[5]
+        telefono = resultado[6]
+
+        datos={
+            "primerNombre": primerNombre,
+            "segundoNombre":  segundoNombre,
+            "primerApellido": primerApellido, 
+            "segundoApellido": segundoApellido,
+            "fechaNacimiento": fechaNacimiento,
+            "telefono": telefono
+
+        }
+        cursor.close()
+        db.close_connection(conexion)
+    return jsonify(datos)
+
 
 
 
