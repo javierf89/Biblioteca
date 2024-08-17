@@ -1,35 +1,54 @@
-.not-found-container {
-  width: 100%;
-  display: flex;
-  overflow: auto;
-  min-height: 100vh;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #282c34;
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
 }
-.not-found-container1 {
-  display: flex;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+
+h1 {
+    font-size: 150px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: -10px;
+    animation: fadeIn 2s ease-in-out;
 }
-.not-found-text1 {
-  color: rgb(38, 38, 38);
-  font-size: 252px;
-  margin-top: -20px;
-  font-weight: 900;
-  margin-bottom: -20px;
-  letter-spacing: -20px;
+
+h3 {
+    font-size: 36px;
+    margin: 20px 0;
+    animation: fadeIn 2.5s ease-in-out;
 }
-.not-found-container2 {
-  width: 421px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+
+p {
+    font-size: 18px;
+    color: #aaaaaa;
+    animation: fadeIn 3s ease-in-out;
 }
-.not-found-text2 {
-  text-align: center;
-  font-weight: 400;
+
+.loader {
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #555;
+    border-top: 5px solid #ffffff;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
