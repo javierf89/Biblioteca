@@ -7,6 +7,8 @@ import uuid
 import mysql.connector
 from mysql.connector import Error
 from functools import wraps
+import math
+from datetime import datetime
 
 app = Flask(__name__,template_folder='../templates')
 CORS(app) 
@@ -519,7 +521,183 @@ def usuario():
 
 
 
+  
+@app.route('/factura',methods=['POST'])
+def factura():
+    data = request.json
+    token = data.get('token')
+    isbn = data.get('isbn')
+    correo = data.get('correo')
+    contraseña= data.get('contraseña')
+    conexion= db.open_connection()
+    cursor = conexion.cursor()
 
+    query="""  SELECT  usuario.token as token,persona.nombre1,persona.nombre2,persona.apellido1,persona.apellido2,persona.fechaNacimiento,telefono.numTelefono,membresia.tipo,membresia.porcentaje
+                FROM persona 
+                INNER JOIN usuario ON usuario.persona_id=persona.id 
+                left JOIN telefono ON persona.id=telefono.persona_id
+                INNER JOIN membresia ON membresia.usuario_id=usuario.id
+                WHERE usuario.token = %s;
+    """
+
+    cursor.execute(query,(token,))
+    resultado = cursor.fetchone()
+
+    if resultado: 
+        primerNombre= resultado[1]
+        segundoNombre = resultado[2]
+        primerApellido = resultado[3]
+        segundoApellido = resultado[4]
+        fechaNacimiento = resultado[5]
+        telefono = resultado[6]
+        membresia_tipo = resultado[7]
+        membresia_porcentaje = resultado[8]
+
+        datos={
+            "primerNombre": primerNombre,
+            "segundoNombre":  segundoNombre,
+            "primerApellido": primerApellido, 
+            "segundoApellido": segundoApellido,
+            "fechaNacimiento": fechaNacimiento,
+            "telefono": telefono,
+            "membresia":membresia_tipo
+
+        }
+        cursor.close()
+        db.close_connection(conexion)
+
+
+    conexion= db.open_connection()
+    cursor = conexion.cursor()
+    query2 =""" 
+    SELECT libro.isbn,libro.titulo,formatoLibro.precio
+    FROM libro
+    INNER JOIN Formato_Libro_has_Libro ON libro.id =  Formato_Libro_has_Libro.libro_id
+    INNER JOIN formatoLibro ON Formato_Libro_has_Libro.formatoLibro_id=formatoLibro.id
+    WHERE libro.isbn = %s
+    """
+    cursor.execute(query2,(isbn,))
+
+    resultado2 = cursor.fetchone();
+    if resultado2:
+        isbn =resultado2[0]
+        titulo =resultado2[1]
+        precio=resultado2[2]
+
+        precio = float(precio)
+        descuento= precio * (membresia_porcentaje/100)
+        precio_total =  format((precio - descuento),'.2f')
+        datos.update({
+            "isbn": isbn,
+            "titulo": titulo,
+            "precio": precio,
+            "preciototal": precio_total
+        })
+        cursor.close()
+        db.close_connection(conexion)
+
+
+    return jsonify(datos)
+
+@app.route('/hacer_factura', methods=['POST'])
+def hacer_factura():
+    data = request.get_json()
+    token = data.get('token')
+    isbn = data.get('isbn')
+    correo = data.get('correo')
+    precio = data.get('precio')
+    total = data.get('total')
+    contraseña = data.get('contraseña')
+
+    conexion = db.open_connection()
+    if conexion is None:
+        return jsonify({"status": "error", "message": "No se pudo conectar a la base de datos"}), 500
+
+    cursor = conexion.cursor()
+    query = """
+    SELECT persona.correoElectronico, usuario.contraseña, usuario.token, usuario.id
+    FROM persona 
+    INNER JOIN usuario ON usuario.persona_id = persona.id 
+    WHERE persona.correoElectronico = %s AND usuario.contraseña = %s AND usuario.token = %s
+    """
+    cursor.execute(query, (correo, contraseña, token))
+    user = cursor.fetchone()
+
+    if user:
+        usuario_id = user[3]
+        query1 = """SELECT id FROM libro WHERE isbn=%s"""
+        cursor.execute(query1, (isbn,))
+        libro = cursor.fetchone()
+        if libro:
+            libro_id = libro[0]
+            query2 = """
+                    INSERT INTO libroVendido(libro_id, usuario_id) VALUES(%s, %s);
+                """
+            cursor.execute(query2, (libro_id, usuario_id))
+
+            query3 = """
+                    SELECT id FROM libroVendido
+                    WHERE libro_id = %s AND usuario_id= %s
+                    """
+            cursor.execute(query3, (libro_id,usuario_id))
+
+            libro_vendido = cursor.fetchone()
+
+            if libro_vendido:
+                id_libro_V = libro_vendido[0]
+                fecha_actual = datetime.now()
+                fecha_formateada = fecha_actual.strftime("%Y-%m-%d %H:%M:%S")
+                forma1 = data.get('forma_pago')
+
+                if forma1 == "paypal":
+                    formaPago = 2
+                elif forma1 == "transferencia":
+                    formaPago = 3
+
+                query4 = """ 
+                INSERT INTO factura(fechaEmision, formaPago_id, usuario_id) 
+                VALUES (%s, %s, %s)
+                """
+                cursor.execute(query4, (fecha_formateada, formaPago, usuario_id))
+
+                query5 = """
+                SELECT id FROM factura 
+                WHERE fechaEmision = %s AND formaPago_id = %s AND usuario_id = %s 
+                """
+                cursor.execute(query5, (fecha_formateada, formaPago, usuario_id))
+                factura = cursor.fetchone()
+
+                if factura:
+                    id_factura = factura[0]
+                    query6 = """
+                            SELECT membresia.id
+                            FROM persona 
+                            INNER JOIN usuario ON usuario.persona_id = persona.id 
+                            INNER JOIN membresia ON membresia.usuario_id = usuario.id
+                            WHERE persona.correoElectronico = %s AND usuario.contraseña = %s AND usuario.token = %s
+                            """
+                    cursor.execute(query6, (correo, contraseña, token))
+
+                    membresia = cursor.fetchone()
+
+                    if membresia:
+                        membresia_id = membresia[0]
+
+                        query7 = """
+                                INSERT INTO detalleFactura(descripcion, cantidad, precioUnitario, subTotal, total, factura_id, libroVendido_id, membresía_id)
+                                VALUES(%s, %s, %s, %s, %s, %s, %s, %s)
+                        """
+                        print(precio,total)
+                        cursor.execute(query7, (libro_id, 1, precio, total, total, id_factura, id_libro_V, membresia_id))
+                        
+                       
+                        conexion.commit()  # Asegurarse de confirmar la transacción
+                        cursor.close()
+                        conexion.close()
+                        return jsonify({"status": "success", "message": "Factura generada con éxito"}), 200
+                       
+
+   
 
 if __name__ == "__main__":
     app.run(debug=True)

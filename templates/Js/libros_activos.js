@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 button.addEventListener('click', () => {
                     localStorage.setItem('venta', libro.isbn);
                     alert(`ISBN guardado en localStorage: ${libro.isbn}`);
-                    window.location.href="no esta"
+                    window.location.href="../html/factura.html"
 
                 });
 

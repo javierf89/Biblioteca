@@ -34,9 +34,9 @@
       <link href="../css/factura.css" rel="stylesheet" />
   </head>
   <body>
-    <link rel="stylesheet" href="./style.css" />
+  
     <div>
-      <link href="./index.css" rel="stylesheet" />
+     
 
       <div class="payment-form-container">
         <div class="payment-form-container1">
@@ -104,7 +104,7 @@
                    
                     
                       <span class="payment-form-text022">
-                        <input type="text" class="payment-form-group81" type="radio" id="primerNombre" placeholder="  Primer Nombre"  required>
+                        <input type="text" class="payment-form-group81" type="radio" id="primerNombre" placeholder="  Primer Nombre"  readonly>
                       </span>
                     
                   </div>
@@ -114,7 +114,7 @@
                     </span>
                     
                       <span class="payment-form-text026">
-                        <input type="text" class="payment-form-group82" type="radio" id="primerApellido" placeholder="  Primer Apellido"  required>
+                        <input type="text" class="payment-form-group82" type="radio" id="primerApellido" placeholder="  Primer Apellido"  readonly>
                        </span>
                     
                   </div>
@@ -123,7 +123,7 @@
                       <span>Segundo Nombre:</span>
                     </span>
                       <span class="payment-form-text030">
-                        <input type="text" class="payment-form-group83" type="radio" id="segundoNombre" placeholder="  Segundo Nombre"  required>
+                        <input type="text" class="payment-form-group83" type="radio" id="segundoNombre" placeholder="  Segundo Nombre"  readonly>
                       </span>
                   </div>
                   <div class="payment-form-group13">
@@ -131,7 +131,7 @@
                       <span>Segundo Apellido:</span>
                     </span>
                       <span class="payment-form-text034">
-                        <input type="text" class="payment-form-group84" type="radio" id="segundoApellido" placeholder="  Segundo Apellido"  required>
+                        <input type="text" class="payment-form-group84" type="radio" id="segundoApellido" placeholder="  Segundo Apellido"  readonly>
                       </span>
                    
                   </div>
@@ -140,7 +140,7 @@
                       <span>Teléfono:</span>
                     </span>
                       <span class="payment-form-text038">
-                        <input type="text" class="payment-form-group85" type="radio" id="telefono" placeholder="  +504 0000 0000"  required>
+                        <input type="text" class="payment-form-group85" type="radio" id="telefono" placeholder="  +504 0000 0000"  readonly>
                       </span>
                     
                   </div>
@@ -149,10 +149,10 @@
                     <span>Contraseña:</span>
                   </span>
                     <span class="payment-form-text044">
-                      <input type="text" class="payment-form-group17" type="radio" id="telefono" placeholder="usuario@gmail.com"  required>
+                      <input type="text" class="payment-form-group17" type="radio" id="correo" placeholder="usuario@gmail.com"  required>
                     </span>
                     <span class="payment-form-text046">
-                        <input type="password" class="payment-form-group18" type="password" id="telefono" placeholder=" ***************************"  required>
+                        <input type="password" class="payment-form-group18" type="password" id="contraseña" placeholder=" ***************************"  required>
                     </span>
                   <span class="payment-form-text048">
                     <span>Membresía:</span>
@@ -163,17 +163,17 @@
                   <span class="payment-form-text052">
                     <span>Platinum</span>
                   </span>
-                  <input type="radio" class="payment-form-group19" name="opcionesMembresia" value="Platinum" required>
+                  <input id="radio" type="radio" class="payment-form-group19" name="opcionesMembresia" value="Platinum" disabled>
                   <span class="payment-form-text054"><span>Premium</span></span>
                   <div class="payment-form-group201">
-                    <input type="radio" name="opcionesMembresia" class="payment-form-rectangle8" value="option2" required>
-                    <input type="radio" name="opcionesMembresia" class="payment-form-rectangle81" value="option3" required>
+                    <input type="radio" id="radio" name="opcionesMembresia" class="payment-form-rectangle8" value="Premium" disabled>
+                    <input type="radio" id="radio" name="opcionesMembresia" class="payment-form-rectangle81" value="Basica" disabled>
                     <span class="payment-form-text056">
                       <span>Básica</span>
                     </span>
                   </div>
                   <div class="payment-form-group21">
-                    <input type="radio" name="opcionesPago" class="payment-form-rectangle82" value="option1" required>
+                    <input type="radio" name="opcionesPago" class="payment-form-rectangle82" value="transferencia" required>
                     
                     <span class="payment-form-text058">
                       <span>PayPal</span>
@@ -181,7 +181,7 @@
                     <span class="payment-form-text060">
                       <span>Transferencia</span>
                     </span>
-                    <input type="radio" name="opcionesPago" class="payment-form-rectangle83" value="option1" required>
+                    <input type="radio" name="opcionesPago" class="payment-form-rectangle83" value="paypal" required>
                     
                   </div>
                 </div>
@@ -195,7 +195,7 @@
                   <input type="checkbox" name="option1" value="option1" class="checkbox-input">
                  
                     <span class="payment-form-text064">
-                      <input type="text" class="payment-form-group86" type="radio" id="nombreLibro" placeholder=" Nombre de Libro"  required>
+                      <input type="text" class="payment-form-group86" type="radio" id="nombreLibro" placeholder=" Nombre de Libro"  readonly>
                     </span>
                 </div>
                 <span class="payment-form-text066"><span>ISBN:</span></span>
@@ -203,9 +203,9 @@
                 <span class="payment-form-text070">
                   <span>Precio Unitario:</span>
                 </span>
-                  <input type="text" class="payment-form-group171" type="radio" id="isbn" placeholder=" ISBN"  required>
-                  <input type="text" class="payment-form-group181" type="radio" id="cantidadLibro" placeholder=" 0"  required>
-                  <input type="text" class="payment-form-group202" type="radio" id="precioUnitario" placeholder=" 0.00"  required>
+                  <input type="text" class="payment-form-group171" type="radio" id="isbn" placeholder=" ISBN"  readonly>
+                  <input type="text" class="payment-form-group181" type="radio" id="cantidadLibro" placeholder=" 0"  readonly>
+                  <input type="text" class="payment-form-group202" type="radio" id="precioUnitario" placeholder=" 0.00"  readonly>
                 
                 <span class="payment-form-text077">
                   <span>Total a Pagar:</span>
@@ -218,17 +218,14 @@
                 </span>
                 <div class="payment-form-group191">
                 </span>
-                <input type="text" class="payment-form-rectangle84" type="radio" id="total" placeholder=" 0.00"  required>
+                <input type="text" class="payment-form-rectangle84" type="radio" id="total" placeholder=" 0.00"  readonly>
                 </div>
                 <div class="payment-form-group16">
-                  
-                  <span class="payment-form-text083">
+               
                     
-                    <button class="button" type="submit" class="button">Efectuar Compra</button>
-
-
-                  </span>
-                  <div class="payment-form-frame2"></div>
+                    <button class="button" type="submit" onclick="getValores()" >Efectuar Compra</button>
+               
+                  
                 </div>
               </div>
             </div>
@@ -294,5 +291,6 @@
         </div>
       </div>
     </div>
+    <script src="../Js/factura.js"></script>
   </body>
 </html>

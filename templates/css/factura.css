@@ -1,3 +1,6 @@
+
+
+
 .payment-form-container {
   width: 100%;
   display: flex;
@@ -1159,34 +1162,32 @@
   flex-shrink: 1;
 }
 .button {
+  position: absolute;
   top: 19px;
-  height: auto;
-  position: absolute;
-  font-size: 24px;
-  font-style: Bold;
-  text-align: left;
-  font-family: Source Sans Pro;
-  font-weight: 700;
-  font-style: italic;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: dashed;
-  left: 0px;
-  width: 355px;
+  left: 0;
+  width: 400px;
   height: 53px;
-  position: absolute;
-  border-color: rgba(249, 168, 4, 1);
-  border-style: solid;
-  border-width: 1px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700; 
+  font-style: italic;
+  font-size: 24px; 
+  line-height: 1.2; 
+  text-align: center; 
+  text-decoration: none; 
+  border: 1px solid rgba(249, 168, 4, 1);
   border-radius: 20px;
-  background-color:  rgba(249, 168, 4, 1);
-  display: flex;
+  background-color: rgba(249, 168, 4, 1);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  
   align-items: center;
   justify-content: center;
-  color: rgb(0, 0, 0);
-  font-size: 30px;
-  cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.1); 
+  padding: 0; 
+}
+
+.button:hover {
+  background-color: rgba(249, 168, 4, 0.9); 
 }
 .payment-form-text083 {
   top: 33px;
@@ -1394,6 +1395,7 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
 .payment-form-text101 {
   color: rgba(234, 234, 252, 1);
   height: auto;
@@ -1406,3 +1408,5 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+
