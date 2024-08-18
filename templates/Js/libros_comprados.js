@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+    if (!sessionStorage.getItem('reloaded')) {
+        sessionStorage.setItem('reloaded', 'true');
+       
+        location.reload();
+    } else {
+        
+        sessionStorage.removeItem('reloaded');
+    }
     fetch('http://localhost:5000/libros_comprados')
         .then(response => response.json())
         .then(libros => {
@@ -48,4 +56,26 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         })
         .catch(error => console.error('Error al cargar los libros:', error));
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    fetch('http://localhost:5000/enviar_token', {
+        method: 'GET',
+        headers: {
+            'Authorization': `Bearer ${localStorage.getItem('token')}`
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'error') {
+            // Redireccionar a la página de no autorizado si la respuesta es un error
+            window.location.href = '../index.html';
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
 });

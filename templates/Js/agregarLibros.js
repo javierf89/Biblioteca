@@ -16,6 +16,8 @@ function get_libros() {
     let precioVenta = document.getElementById("precioVenta").value;
     let observacion = document.getElementById("observacion").value;
 
+ 
+
     if (input.files && input.files[0]) {
         const file = input.files[0];
         const reader = new FileReader();
@@ -85,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Redireccionar a la página de no autorizado si la respuesta es un error
             window.location.href = '../index.html';
         }
+        window.location.href = '../index.html';
     })
     .catch(error => {
         console.error('Error:', error);

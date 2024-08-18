@@ -9,6 +9,7 @@ from mysql.connector import Error
 from functools import wraps
 import math
 from datetime import datetime
+from dateutil.relativedelta import relativedelta
 
 app = Flask(__name__,template_folder='../templates')
 CORS(app) 
@@ -34,15 +35,15 @@ def submitSignUp():
     conexion = db.open_connection()
     if conexion is None:
         return jsonify({"status": "error", "message": "No se pudo conectar a la base de datos"}), 500
-    
-    cursor = conexion.cursor()
+    cursor = conexion.cursor(buffered=True)
+   
     query = """
     INSERT INTO persona (nombre1,nombre2,apellido1,apellido2,correoElectronico,fechaNacimiento)
     VALUES (%s, %s, %s, %s, %s, %s)
     """
     
     cursor.execute(query, (primerNombre, segundoNombre, primerApellido, segundoApellido,email,fechaNacimiento))
-    conexion.commit()
+   
 
    
 
@@ -55,12 +56,28 @@ def submitSignUp():
     if RESULTADO_id:
             id = RESULTADO_id[0]
             query2 = """
-            INSERT INTO usuario (persona_id, estadoCuenta_id, contraseña, token)
-            VALUES (%s, %s, %s, %s)
+            INSERT INTO usuario (persona_id, estadoCuenta_id, contraseña, token,rol)
+            VALUES (%s, %s, %s, %s,%s)
             """
-            cursor.execute(query2, (id, "1", contraseña, token))
-            conexion.commit()
-  
+            cursor.execute(query2, (id, "1", contraseña, token,"1"))
+           
+
+           
+            query4 = """SELECT id FROM usuario WHERE persona_id= %s"""
+            cursor.execute(query4,(id,))
+
+            usuario=cursor.fetchone()
+
+            if usuario:
+                id_usuario = usuario[0]
+                query5 = """INSERT INTO membresia(tipo,duracion,usuario_id,porcentaje) VALUES (%s,%s,%s,%s)"""
+
+                cursor.execute(query5,("BA","1 MES",id_usuario,0))
+
+                query3 =""" INSERT INTO telefono(numTelefono,tipo,operador,persona_id,editorial_id) VALUES(%s,%s,%s,%s,%s)"""
+                cursor.execute(query3,(telefono,"movil","tigo",id,"1"))
+
+                conexion.commit()
 
     cursor.close()
     db.close_connection(conexion)
@@ -107,6 +124,55 @@ def libros_disponibles():
         return jsonify(libros), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 400
+
+
+
+@app.route("/prestar", methods=["POST"])
+def prestar():
+    data = request.json
+    isbn = data.get('isbn')
+    token = data.get('token')
+    fecha_actual = datetime.now()
+
+
+    fecha_formateada_str = fecha_actual.strftime("%Y-%m-%d")
+
+    # Convierte la cadena de nuevo a un objeto datetime
+    fecha_formateada = datetime.strptime(fecha_formateada_str, "%Y-%m-%d")
+
+    fechaRegreso = fecha_formateada + relativedelta(months=1)
+
+
+    fechaRegreso_str = fechaRegreso.strftime("%Y-%m-%d")
+
+    
+    conexion = db.open_connection()
+    cursor = conexion.cursor()
+
+    query1 =  """ SELECT id FROM usuario WHERE token = %s   """
+    cursor.execute (query1,(token,))
+
+    usuario = cursor.fetchone()
+
+    if usuario:
+        id_usuario = usuario[0]
+        query2="""SELECT id,url FROM libro WHERE isbn = %s """
+        cursor.execute(query2,(isbn,))
+        libro = cursor.fetchone()
+        if libro:
+            id_libro = libro[0]
+            url = libro[1]
+            query = """INSERT INTO prestamo(fechaPrestamo,fechaRegreso,estadoPrestamo,usuario_id,libro_id) VALUES(%s,%s,%s,%s,%s)"""
+            cursor.execute(query,(fecha_formateada_str,fechaRegreso_str,"pendiente",id_usuario,id_libro))
+            datos = {
+                "url" : url
+
+            }
+            conexion.commit()  # Asegurarse de confirmar la transacción
+            cursor.close()
+            conexion.close()
+
+            return jsonify(datos)
 
 
 
@@ -443,33 +509,45 @@ def login():
         return jsonify({"status": "error", "message": "Credenciales inválidas"}), 401
     
 
-
 def administrador(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         token = request.headers.get('Authorization')
-        if not token.startswith('Bearer '):
+        
+        if not token:
             return jsonify({"status": "error", "message": "Token no proporcionado"}), 401
+        
+        if not token.startswith('Bearer '):
+            return jsonify({"status": "error", "message": "Token mal formado"}), 401
+        
         token = token.split(' ')[1]
         
         conexion = db.open_connection()
         cursor = conexion.cursor()
-        query="""SELECT rol 
-        FROM usuario 
-        WHERE token=%s
-        """
-        cursor.execute(query,(token,))
-
-        resultado=cursor.fetchone()
+        query = """SELECT rol 
+                   FROM usuario 
+                   WHERE token=%s"""
+        
+        try:
+            cursor.execute(query, (token,))
+            resultado = cursor.fetchone()
+        except Exception as e:
+            cursor.close()
+            db.close_connection(conexion)
+            return jsonify({"status": "error", "message": str(e)}), 500
+        
         cursor.close()
         db.close_connection(conexion)
 
         if resultado:
-            rol=resultado[0]
-            if rol==2:
+            rol = resultado[0]
+            if rol == 2:  # Asegúrate de que 2 es el rol adecuado
                 return f(*args, **kwargs)
             else:
-                return jsonify({"status": "error", "message": "no autorizado"}), 401
+                return jsonify({"status": "error", "message": "No autorizado"}), 401
+        else:
+            return jsonify({"status": "error", "message": "Token no válido"}), 401
+
     return decorated_function
 
 @app.route('/enviar_token', methods=['GET'])

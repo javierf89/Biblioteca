@@ -1,6 +1,7 @@
 let precio  = 0 ;
 let total = 0;
 document.addEventListener("DOMContentLoaded", () => {
+   
     let token = localStorage.getItem('token');
     let isbn = localStorage.getItem('venta');
     fetch('http://localhost:5000/factura', {

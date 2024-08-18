@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+    if (!sessionStorage.getItem('reloaded')) {
+        sessionStorage.setItem('reloaded', 'true');
+
+        location.reload();
+    } else {
+        
+        sessionStorage.removeItem('reloaded');
+    }
     fetch('http://localhost:5000/libros_disponibles')
         .then(response => response.json())
         .then(libros => {

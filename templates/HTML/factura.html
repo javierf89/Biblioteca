@@ -32,16 +32,26 @@
     </style>
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
       <link href="../css/factura.css" rel="stylesheet" />
+      <script>
+        function volverInicio() {
+            window.location.href = '../index.html';
+        }
+        function atras() {
+            window.location.href = './libro_venvidos.html';
+        }
+       
+      </script>
   </head>
   <body>
   
     <div>
      
 
-      <div class="payment-form-container">
+      <div class="payment-form-container" >
         <div class="payment-form-container1">
-          <div class="payment-form-brand">
+          <div class="payment-form-brand" >
             <img
+              onclick="volverInicio()"
               src="../public/external/vector1365-qpie.svg"
               alt="Vector1365"
               class="payment-form-vector"
@@ -51,6 +61,8 @@
             </span>
           </div>
           <img
+            onclick="atras()"
+           
             src="../public/external/vector1366-cf14.svg"
             alt="Vector1366"
             class="payment-form-vector1"

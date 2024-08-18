@@ -925,9 +925,12 @@ body {
   top: 15px;
   left: 1127px;
 }
+
+
 .button {
+  z-index: 1;
   width: 301px;
-  height: 53px;
+  height: 50px;
   background: rgba(249,168,4,1);
   opacity: 1;
   position: absolute;
@@ -1049,3 +1052,5 @@ body {
   left: 560px;
   overflow: hidden;
 }
+
+.button

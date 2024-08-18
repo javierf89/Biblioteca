@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const incio_sesion = document.getElementById('incio_sesion');
-    const Registrarse = document.getElementById('Registrarse');
+    const perfil = document.getElementById('perfil');
 
     if (token) {
         incio_sesion.textContent = 'Cerrar sesión';  
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    Registrarse.addEventListener('click', () => {
-        window.location.href = '../html/signUp.html';  
+    perfil.addEventListener('click', () => {
+        window.location.href = '../html/Usuario.html';  
     });
 });
