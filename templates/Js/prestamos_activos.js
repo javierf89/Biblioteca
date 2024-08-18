@@ -7,14 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
      
         sessionStorage.removeItem('reloaded');
     }
-    if (!sessionStorage.getItem('reloaded')) {
-        sessionStorage.setItem('reloaded', 'true');
-        
-        location.reload();
-    } else {
-  
-        sessionStorage.removeItem('reloaded');
-    }
+    
 
     fetch('http://localhost:5000/prestamos_activos')
         .then(response => response.json())

@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Redireccionar a la página de no autorizado si la respuesta es un error
             window.location.href = '../index.html';
         }
-        window.location.href = '../index.html';
+       
     })
     .catch(error => {
         console.error('Error:', error);
