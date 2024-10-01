@@ -2,7 +2,7 @@
 
 Creacion de un sistema de Biblioteca con PYthon(Flask),Javascript,Html,CSS
 
-## Jostin Cruz y Lizzy Mejia
+##Autores: Jostin Cruz y Lizzy Mejia
 
 - **Nombre**: Jostin Cruz y Lizzy Pamela
 - **Correo**: cruzjostin987@gmail.com  y 
